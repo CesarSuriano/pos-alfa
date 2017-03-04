@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Formulários</h1>
+        <form method="get" name="form1">
+            <label for="email">Preencha o seu e-mail</label>
+            <input type="email" name="email" value="" placeholder="Digite seu email" size="60" maxlength="50"
+            required>
+
+            <br>
+
+            <label for="cpf">CPF:</label>
+            <input type="text"  name="cpf" value="" size="20" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+             title="Formato:000.000.000-00" required>
+
+            <button type="submit">Bora</button>
+        </form>
+
+        <form name="form2">
+            <label for="valor">Valor:</label>
+            <input type="number" name="valor" value="" id="valor">
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" value="" id="nome">
+            <br>
+            <button type="button" onclick="gravar()">save</button>
+
+            <button type="button" onclick="ler()">verificar</button>
+        </form>
+
+        <p id="msg">
+            Clique em ler
+        </p>
+
+        <script type="text/javascript">
+            function gravar(){
+                var valor = document.getElementById("valor").value;
+                var nome = document.getElementById("nome").value;
+
+                localStorage.setItem( "valor", valor );
+                localStorage.setItem( "nome", nome );
+
+                alert("Diogo 1: " + valor + " " + nome );
+            }
+
+            function ler(){
+                var valor = localStorage.getItem("valor");
+                var nome = localStorage.getItem("nome");
+
+                document.getElementById("msg").innerHTML = "O valor é: "+
+                        valor + " o nome é: " +
+                        nome;
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,68 @@
+//Variaveis
+$cor1: #FFF;
+$cor2: #F00;
+$cor3: #FF0;
+$titulo: Verdana, Tahoma, Arial;
+$texto: Tahoma, Arial;
+$borda: 1px solid #FFF;
+$largura: 900px;
+
+//Css da página
+body {
+    background: url( arquivos/background.jpg );
+    color: $cor1;
+}
+
+.container {
+    width: $largura;
+    margin: auto;
+}
+
+header {
+    width: $largura;
+    background: $cor3;
+    h1{
+        color: $cor2;
+        text-align: center;
+    }
+}
+
+nav {
+    width: $largura;
+    background: $cor3;
+    a {
+        background: $cor1;
+        transition: all 1s;
+        font: 1.2em $texto;
+        &:hover{
+            background: $cor2;
+        }
+    }
+}
+
+main {
+    width: 78%;
+    font-family: $texto;
+    float: left;
+    border: $borda;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+aside {
+    width: 20%;
+    font-family: $texto;
+    border: $borda;
+    float: right;
+}
+
+footer {
+    width: $largura;
+    font: 1.2em $texto;
+    text-align: center;
+    background: $cor2;
+    color: $cor1;
+}
+
+.clear {
+    clear: both;
+}

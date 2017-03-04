@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Audio em HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="css/style.css" rel="stylesheet">-->
+    </head>
+    <body>
+        <h1>Audio em HTML5</h1>
+        <audio  controls>
+            <source src="arquivos/acdc.mp3" type="audio/mp3">
+            <p>Seu navegador não suporta audio</p>
+        </audio>
+
+        <h1>Audio com controle</h1>
+
+        <audio id="audio1">
+            <source src="arquivos/acdc.mp3" type="audio/mp3">
+            <p>Seu navegador não suporta audio</p>
+        </audio>
+
+        <input type="range" id="barra" name="" value="0" onchange="mudarAudio()">
+
+        <button type="button" id="tocar" onclick="playPause()">Play/Pause</button>
+
+        <script type="text/javascript">
+            var audio = document.getElementById( "audio1" );
+
+            var barra = document.getElementById("barra");
+
+            function playPause(){
+                if(audio.paused){
+                    audio.play();
+                }
+                else{
+                    audio.pause();
+                }
+            }
+
+            function mudarAudio(){
+                var tempo = audio.duration * ( bara.value / 100 );
+                audio.currentTime = tempo;
+            }
+            audio.addEventListener("timeupdate", function(){
+                var valor = ( 100 / audio.duration ) * audio.currentTime;
+
+                barra.value = valor;   
+            });
+
+        </script>
+    </body>
+</html>

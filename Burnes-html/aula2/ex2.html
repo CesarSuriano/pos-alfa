@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Animações</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="estilo2.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Animações</h1>
+
+        <img src="arquivos/vinil.png" alt="" id="disco">
+
+        <button type="button" onclick="animacao()">
+            Play/Pause
+        </button>
+
+        <script type="text/javascript">
+            function animacao(){
+                var obj = document.getElementById("disco");
+                var estado = obj.style.animationPlayState;
+
+                if (( estado == "" ) || ( estado == "running" )){
+                    obj.style.animationPlayState = "paused";
+                } else {
+                    obj.style.animationPlayState = "running";
+                }
+            }
+        </script>
+    </body>
+</html>

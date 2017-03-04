@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Geolocalização</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tralala">
+
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAWWLGVZCvEzQvUdLCz3n4R0gcy2pPMxbg"></script>
+
+    <style type="text/css">
+        #mapa{
+            width : 800px;
+            height: 400px;
+            border: 1px solid #000
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Geolocalização</h1>
+
+    <button type="button" onclick="mostrar()">
+            Mostrar
+    </button>
+
+    <div id="mapa">
+        Aqui vai carregar o mapa
+    </div>
+
+    <script type="text/javascript">
+        function mapa(){
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(mostrarMapa);
+            }
+            else {
+                alert("Navegador ruim");
+            }
+        }
+        // var x;
+        // function mostrar() {
+        //     x = document.getElementById("msg");
+
+        //     if (navigator.geolocation) {
+        //         navigator.geolocation.getCurrentPosition(showPosition);
+        //     }
+        //     else {
+        //         x.innerHTML = "lalalala";
+        //     }
+        // }
+
+        // function showPosition(position) {
+        //     x.innerHTML = "Latitude: " + position.coords.latitude +
+        //         "Longitude: " + position.coords.longitude;
+        // }
+        function mostrarMapa(position){
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+
+            var mapOptions = {
+                zoom: 15,
+                center: new google.maps.LatLng(lat, lon),
+                mapTypeId: google.maps.MapTypeId.ROADMAP //SATELLITE, HYBRID, TERRAIN 
+            };
+
+            var map      = new google.maps.Map(document.getElementById("mapa"), mapOptions);
+            var latlon   = new google.maps.LatLng(lat, lon);
+            var marcador = new google.maps.Marker({position: latlon, map, title:"Alfa"});
+        }
+
+        google.maps.event.addDomListener(window, 'load', mapa);
+    </script>
+
+</body>
+
+</html>

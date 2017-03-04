@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Geolocalização</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Geolocalização</h1>
+
+        <p id="msg">
+            Aqui será mostrada a localização
+        </p>
+
+        <button type="button" onclick="mostrar()">
+            Mostrar
+        </button>
+
+        <script type="text/javascript">
+            var x;
+            function mostrar(){
+                x = document.getElementById("msg");
+
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else{
+                    x.innerHTML = "lalalala";
+                }
+            }
+
+            function showPosition(position){
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                "Longitude: " + position.coords.longitude;
+            }
+        </script>
+
+    </body>
+</html>

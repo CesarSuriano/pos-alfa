@@ -1,0 +1,15 @@
+#disco {
+    width: 150px;
+    position: relative;
+    animation-name: exemplo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exemplo{
+    0%  { top: 0; left:0; }
+    20% { top: 0; left: 300px; opacity: 0.5; }
+    40% { top: 200px; left: 300px; transform: rotate(360deg); }
+    60% { top:200px; left: 0px; transform: scale(2); width: 150px; height: 150px; }
+    80% { top:0px; left: 0px; transform: scale(1); width: 150px; height: 150px; }
+}

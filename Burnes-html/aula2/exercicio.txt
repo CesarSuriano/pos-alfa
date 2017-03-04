@@ -1,0 +1,5 @@
+anderson@faculdadealfaumuarama.com.br
+-Assunto: pois webdev
+
+* fazer um site(curriculo) usando transições, scss, uma galeria de fotos
+ate dia 17/03

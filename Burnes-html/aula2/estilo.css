@@ -1,0 +1,53 @@
+@import url( "https://fonts.googleapis.com/css?family=Roboto" );
+
+body {
+    background: linear-gradient(to left, red, #F00, black);
+}
+
+h1 {
+    font: 2em Roboto, Tahoma;
+    color: #F00;
+    text-shadow: 2px 5px 10px #000;
+}
+
+p {
+    font: 0.8em 'Open Sans', Tahoma;
+    color: #333;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: #eee;
+    box-shadow: 1px 1px 1px #000;
+    background: radial-gradient(#F00, pink);
+}
+
+.img {
+    width: 300px;
+    -webkit-filter: opacity(50%);
+    filter: opacity(50%);
+    transition: all 1s;
+}
+
+.img:hover {
+    width: 400px;
+    -webkit-filter: opacity(100%);
+    filter: opacity(100%);
+    transform: scale(2)
+}
+
+.img2 {
+    width: 200px;
+    transition : all 0.5s;
+}
+
+.img2:hover {
+    transform: rotate(-360deg);
+}

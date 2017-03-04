@@ -1,0 +1,49 @@
+body {
+  background: url(arquivos/background.jpg);
+  color: #FFF; }
+
+.container {
+  width: 900px;
+  margin: auto; }
+
+header {
+  width: 900px;
+  background: #FF0; }
+  header h1 {
+    color: #F00;
+    text-align: center; }
+
+nav {
+  width: 900px;
+  background: #FF0; }
+  nav a {
+    background: #FFF;
+    transition: all 1s;
+    font: 1.2em Tahoma, Arial; }
+    nav a:hover {
+      background: #F00; }
+
+main {
+  width: 78%;
+  font-family: Tahoma, Arial;
+  float: left;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.2); }
+
+aside {
+  width: 20%;
+  font-family: Tahoma, Arial;
+  border: 1px solid #FFF;
+  float: right; }
+
+footer {
+  width: 900px;
+  font: 1.2em Tahoma, Arial;
+  text-align: center;
+  background: #F00;
+  color: #FFF; }
+
+.clear {
+  clear: both; }
+
+/*# sourceMappingURL=estilo3.css.map */
