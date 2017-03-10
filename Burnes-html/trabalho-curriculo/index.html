@@ -1,36 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="fonts/fonts.css" rel="stylesheet">
-        <script type="text/javascript" src="js/main.js"></script>
-    </head>
-    <body>
-        <header id="home">
-            <h1>Ola</h1>
-        </header>
 
-        <section id="sobre">
-            
-        </section>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
 
-        <section id="caracteristicas">
-            
-        </section>
+<body>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#home"><span>Home</span></a></li>
+            <li><a href="#sobre"><span>Sobre</span></a></li>
+            <li><a href="#caracteristicas"><span>Características</span></a></li>
+            <li><a href="#experiencia"><span>Experiência</span></a></li>
+            <li><a href="#fotos"><span>Fotos</span></a></li>
+            <li><a href="#mais-informacoes"><span>Mais informações</span></a></li>
+        </ul>
+        <a href="#0" class="close-menu">Close<span></span></a>
+    </nav>
+    <!--FALTA IMAGEM DE FUNDO-->
+    <header id="home">
+        <h1>OI, EU SOU O GOK... <span id="nome">CÉSAR</span></h1>
+        <h4>
+            <span class="descricao">Designer</span>
+            <span class="icone-descricao"></span>
+            <span class="descricao">Programador</span>
+            <span class="icone-descricao"></span>
+            <span class="descricao">Rei do FIFA (nas horas vagas)</span>
+        </h4>
 
-        <section id="experiencia">
-            
-        </section>
+        <a class="mouse-scroll js-animated animate" href="#">
+            <span class="mouse"><span class="mouse-movement"></span></span>
+            <span class="mouse-message fadeIn"><font><font>rolagem</font></font></span>
+        </a>
+    </header>
+    VERIFICAR SE É MELHOR DEFINIR A IMAGEM NO CSS OU HTML
+    <section id="sobre">
+        <div id="foto-demonstracao"></div>
+        <div id="texto-apresentacao">
+            <h2 id="titulo-apresentacao"></h2>
+            <p class="p-apresentacao"></p>
+            <a id="btn-me-contrate" href="#mais-informacoes">ME CONTRATE</a>
+        </div>
+    </section>
 
-        <section id="fotos">
+    <section id="caracteristicas">
+        <h2>Algumas de minhas habilidades</h2>
+        <div id="habilidades">
+            <div id="habi-mobile" class="habis">
+                <span class="icone-habilidade"></span>
+                <h3 class="titulo-habilidade">MOBILE</h3>
+                <p class="descricao-habilidade"></p>
+            </div>
 
-        </section>
+            <div id="habi-web" class="habis">
+                <span class="icone-habilidade"></span>
+                <h3 class="titulo-habilidade">WEB</h3>
+                <p class="descricao-habilidade"></p>
+            </div>
 
-        <section id="maisInformacoes">
+            <div id="habi-sql" class="habis">
+                <span class="icone-habilidade"></span>
+                <h3 class="titulo-habilidade">SQL</h3>
+                <p class="descricao-habilidade"></p>
+            </div>
 
-        </section>
-    </body>
+            <div id="habi-outros" class="habis">
+                <span class="icone-habilidade"></span>
+                <h3 class="titulo-habilidade">NOVAS TÉCNOLOGIAS</h3>
+                <p class="descricao-habilidade"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <div id="exp-proficional"></div>
+        <div id="educacao"></div>
+    </section>
+
+    <section id="fotos">
+        <h2 id="titulo-fotos">Algumas fotos aleatórias</h2>
+        <p id="descricao-fotos">Algumas fotos adicionadas simplesmente para mim poder testar os efeitos</p>
+        <div id="galeria">
+            <!--IMAGENS-->
+        </div>
+    </section>
+
+    <section id="mais-informacoes">
+        <div id="informacoes">
+            <div id="endereco">
+                <h2>Endereço</h2>
+                <a href="#" class="info-contato">
+                    <span class="icone-contato">
+                    </span>
+                    Rua lalala
+                </a>
+                
+                <a href="#" class="info-contato">
+                    <span class="icone-contato">
+                    </span>
+                    telefone
+                </a>
+
+                <a href="#" class="info-contato">
+                    <span class="icone-contato">
+                    </span>
+                    email
+                </a>
+
+                <a href="#" class="info-contato">
+                    <span class="icone-contato">
+                    </span>
+                    Rua lalala
+                </a>
+            </div>
+        </div>
+
+        <div id="contato">
+
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>CÉSAR AUGUSTO © 2017 TUDO FEITO POR MIM</p>
+    </footer>
+</body>
+
 </html>
