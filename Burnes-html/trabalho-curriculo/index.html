@@ -7,21 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link href="fonts/fonts.css" rel="stylesheet">
-    <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
-    <nav id="main-nav">
-        <ul>
-            <li><a href="#home"><span>Home</span></a></li>
-            <li><a href="#sobre"><span>Sobre</span></a></li>
-            <li><a href="#caracteristicas"><span>Características</span></a></li>
-            <li><a href="#experiencia"><span>Experiência</span></a></li>
-            <li><a href="#fotos"><span>Fotos</span></a></li>
-            <li><a href="#mais-informacoes"><span>Mais informações</span></a></li>
-        </ul>
-        <a href="#0" class="close-menu">Close<span></span></a>
-    </nav>
+
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="#home" class="page-scroll"><span>Home</span></a></li>
+                <li><a href="#sobre" class="page-scroll"><span>Sobre</span></a></li>
+                <li><a href="#caracteristicas" class="page-scroll"><span>Características</span></a></li>
+                <li><a href="#experiencia" class="page-scroll"><span>Experiência</span></a></li>
+                <!--<li><a href="#fotos" class="page-scroll"><span>Fotos</span></a></li>-->
+                <li><a href="#mais-informacoes" class="page-scroll"><span>Mais informações</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
     <!--FALTA IMAGEM DE FUNDO-->
     <header id="home">
         <h1>OI, EU SOU O GOK... <span id="nome">CÉSAR</span></h1>
@@ -42,9 +50,15 @@
     <section id="sobre">
         <div id="foto-demonstracao"></div>
         <div id="texto-apresentacao">
-            <h2 id="titulo-apresentacao"></h2>
-            <p class="p-apresentacao"></p>
-            <a id="btn-me-contrate" href="#mais-informacoes">ME CONTRATE</a>
+            <h2 id="titulo-apresentacao">Quem sou eu?</h2>
+            <p class="apresentacao">
+                Olá, esse carinha ai da foto sou eu. Meu nome é César Augusto, programador de 20 anos e natural de Cianorte-PR.
+            </p>
+            <p class="apresentacao">
+                Me formei em Análise e Desenvolvimento de Sistemas pela Unipar no ano de 2016. atualmente trabalho como desenvolvedor na
+                empresa Arus T.I, além de estar fazendo uma Pós-Graduação em Desenvolvimento WebMobile na faculdade Alfa.
+            </p>
+            <a id="btn-me-contrate" href="#mais-informacoes">CONTRATE-ME</a>
         </div>
     </section>
 
@@ -53,42 +67,98 @@
         <div id="habilidades">
             <div id="habi-mobile" class="habis">
                 <span class="icone-habilidade"></span>
-                <h3 class="titulo-habilidade">MOBILE</h3>
-                <p class="descricao-habilidade"></p>
+                <h3 class="titulo-habilidade">MOBILE APPS</h3>
+                <p class="descricao-habilidade">
+                    Um grande entuziasta de aplicativos nativos. Apesar de ter mais familiaridade com Java, estou sempre buscando me aprofundar
+                    em outras linguagens para mobile, como Swift por exemplo
+                </p>
             </div>
 
             <div id="habi-web" class="habis">
                 <span class="icone-habilidade"></span>
                 <h3 class="titulo-habilidade">WEB</h3>
-                <p class="descricao-habilidade"></p>
+                <p class="descricao-habilidade">
+                    Sempre fui fascinado por interfaces bonitas e bem feitas, e o que dizer do javascript, essa linguagem que sempre odiei e
+                    hoje considero pacas.
+                </p>
             </div>
 
             <div id="habi-sql" class="habis">
                 <span class="icone-habilidade"></span>
                 <h3 class="titulo-habilidade">SQL</h3>
-                <p class="descricao-habilidade"></p>
+                <p class="descricao-habilidade">
+                    Simplesmente a linguagem mais intuitiva que existe, sem mais.
+                </p>
             </div>
 
             <div id="habi-outros" class="habis">
                 <span class="icone-habilidade"></span>
                 <h3 class="titulo-habilidade">NOVAS TÉCNOLOGIAS</h3>
-                <p class="descricao-habilidade"></p>
+                <p class="descricao-habilidade">
+                    Adoro ficar antenado no que sai de novo na área de tecnologia, porém são tantas coisas que fico chateado em saber que não
+                    posso aprender todas (iconezinho triste)
+                </p>
             </div>
         </div>
     </section>
 
     <section id="experiencia">
-        <div id="exp-proficional"></div>
-        <div id="educacao"></div>
+        <div id="exp-proficional">
+            <h2>Experiência Profissional</h2>
+            <h3>Arus T.I</h3>
+            <p class="desc-experiencia">
+                Outubro 2016 - Março 2017
+            </p>
+            <p class="desc-experiencia">
+                Foi a minha primeira experiência profissional com o ramo de desenvolvimento de software. A cinco meses trabalho como programador
+                nesta empresa onde tive a oportunidade de conhecer várias coisas novas e melhorar o que já conhecia.
+            </p>
+        </div>
+        <div id="educacao">
+            <h2>Educação</h2>
+            <div id="educacao-unipar">
+                <h3>Unipar - Análise e Desenvolvimento de Sistemas</h3>
+                <p class="desc-educacao">
+                    Fevereiro 2014 - Dezembro 2016
+                </p>
+                <p class="desc-educacao">
+                    Foi onde tive os meu primeiros contatos com a área de tecnologia. Aprendi a programar, para que serve um banco de dados e
+                    o principal, é possivel aprender a programar fazendo pão com ovo(só os fortes entenderão).
+                </p>
+            </div>
+
+            <div id="educacao-alfa">
+                <h3>Alfa Pós-Graduação em Desenvolvimento WebMobile</h3>
+                <p class="desc-educacao">
+                    Fevereiro 2017 - 2018
+                </p>
+                <p class="desc-educacao">
+                    A área de WEB e Mobile foram com certeza as que mais me facinavam na faculdade, por esse motivo resolvi me especializar nessa
+                    área.
+                </p>
+            </div>
+
+            <div id="educacao-uem">
+                <h3>UEM - Design de Produto</h3>
+                <p class="desc-educacao">
+                    Abril 2017 - Dezembro 2020
+                </p>
+                <p class="desc-educacao">
+                    Logo nos primeiros meses do curso de Análise de Sistemas, percebi que alguns sites, sistemas e aplicativos, são muito mais
+                    bonito e faceis de usar do que outros. Foi assim que conheci e comecei a me interessar sobre Design e
+                    decidi que iria me aprofundar nessa área o quanto antes possível.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section id="fotos">
+    <!--<section id="fotos">
         <h2 id="titulo-fotos">Algumas fotos aleatórias</h2>
         <p id="descricao-fotos">Algumas fotos adicionadas simplesmente para mim poder testar os efeitos</p>
         <div id="galeria">
-            <!--IMAGENS-->
+            <!--IMAGENS
         </div>
-    </section>
+    </section>-->
 
     <section id="mais-informacoes">
         <div id="informacoes">
@@ -96,20 +166,17 @@
                 <h2>Endereço</h2>
                 <a href="#" class="info-contato">
                     <span class="icone-contato">
-                    </span>
-                    Rua lalala
-                </a>
-                
-                <a href="#" class="info-contato">
-                    <span class="icone-contato">
-                    </span>
-                    telefone
+                    </span> Rua lalala
                 </a>
 
                 <a href="#" class="info-contato">
                     <span class="icone-contato">
-                    </span>
-                    email
+                    </span> telefone
+                </a>
+
+                <a href="#" class="info-contato">
+                    <span class="icone-contato">
+                    </span> email
                 </a>
             </div>
 
@@ -130,6 +197,8 @@
     <footer id="footer">
         <p>CÉSAR AUGUSTO © 2017 TUDO FEITO POR MIM</p>
     </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
