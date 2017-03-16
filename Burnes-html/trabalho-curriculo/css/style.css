@@ -10,6 +10,7 @@ html, body {
 
 #home {
   height: 100vh;
+  min-height: 600px;
   background: url("../img/image-header.jpg");
   background-size: cover;
   background-position: center center;
@@ -21,7 +22,7 @@ html, body {
   width: 100%; }
 
 .inner {
-  min-height: 100vh;
+  height: 100%;
   position: relative; }
 
 .home .inner {
@@ -35,7 +36,6 @@ html, body {
   .content h1 {
     color: #FFFFFF;
     font-size: 70px;
-    letter-spacing: 2px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 4%; }
@@ -53,25 +53,17 @@ html, body {
   margin: 5px;
   color: #FF6E6E; }
 
-.mouse-scroll {
-  width: 200px;
-  left: 50%;
-  top: 80%;
-  margin-left: -100px;
-  /* margin-bottom: 800px; */
-  position: absolute; }
-
 .button_container {
   position: fixed;
-  top: 5%;
-  right: 2%;
+  top: 10%;
+  right: 5%;
   height: 27px;
   width: 35px;
   cursor: pointer;
   z-index: 1000;
   transition: opacity .25s ease; }
-  .button_container:hover {
-    opacity: .7; }
+  .button_container:hover span {
+    background: #FF6E6E; }
   .button_container.active .top {
     transform: translateY(11px) translateX(0) rotate(45deg);
     background: #FFF; }
@@ -82,7 +74,7 @@ html, body {
     transform: translateY(-11px) translateX(0) rotate(-45deg);
     background: #FFF; }
   .button_container span {
-    background: #FF5252;
+    background: #fff;
     border: none;
     height: 5px;
     width: 100%;
@@ -98,7 +90,7 @@ html, body {
 
 .overlay {
   position: fixed;
-  background: #FF5252;
+  background: #FF6E6E;
   top: 0;
   z-index: 100;
   left: 0;
@@ -110,7 +102,7 @@ html, body {
   transition: opacity .35s, visibility .35s, height .35s;
   overflow: hidden; }
   .overlay.open {
-    opacity: .9;
+    opacity: 1;
     visibility: visible;
     height: 100%; }
     .overlay.open li {
@@ -170,5 +162,99 @@ html, body {
   100% {
     opacity: 1;
     left: 0; } }
+@-webkit-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
+@-moz-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
+@keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
+.scroll-btn {
+  top: 85%;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+.scroll-btn > * {
+  display: inline-block;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #7f8c8d;
+  color: #ffffff;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px; }
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+  color: #ffffff; }
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+  opacity: 0.8;
+  filter: alpha(opacity=80); }
+
+.scroll-btn .mouse {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 55px;
+  margin: 0 auto 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 23px; }
+
+.scroll-btn .mouse > * {
+  position: absolute;
+  display: block;
+  top: 29%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: white;
+  border-radius: 50%;
+  -webkit-animation: ani-mouse 2.5s linear infinite;
+  -moz-animation: ani-mouse 2.5s linear infinite;
+  animation: ani-mouse 2.5s linear infinite; }
 
 /*# sourceMappingURL=style.css.map */
