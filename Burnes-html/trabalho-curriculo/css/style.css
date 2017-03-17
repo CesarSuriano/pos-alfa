@@ -63,7 +63,7 @@ html, body {
   z-index: 1000;
   transition: opacity .25s ease; }
   .button_container:hover span {
-    background: #FF6E6E; }
+    opacity: .8; }
   .button_container.active .top {
     transform: translateY(11px) translateX(0) rotate(45deg);
     background: #FFF; }
@@ -74,7 +74,7 @@ html, body {
     transform: translateY(-11px) translateX(0) rotate(-45deg);
     background: #FFF; }
   .button_container span {
-    background: #fff;
+    background: #FF6E6E;
     border: none;
     height: 5px;
     width: 100%;
@@ -256,5 +256,55 @@ html, body {
   -webkit-animation: ani-mouse 2.5s linear infinite;
   -moz-animation: ani-mouse 2.5s linear infinite;
   animation: ani-mouse 2.5s linear infinite; }
+
+/*
+Section sobre
+*/
+#sobre {
+  height: 100vh;
+  background-color: #F5F5F5; }
+
+#avatar {
+  background: url("../img/avatar.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  height: 100%;
+  width: 45%;
+  position: relative;
+  display: inline-block; }
+
+#apresentacao {
+  width: 50%;
+  min-height: 500px;
+  float: right;
+  padding-right: 10%;
+  padding-left: 3%;
+  padding-top: 5%;
+  height: 100%; }
+  #apresentacao h2 {
+    color: #202532;
+    font-size: 35px;
+    text-align: left;
+    text-transform: uppercase; }
+  #apresentacao p {
+    color: #202532;
+    line-height: 1.6rem;
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 1px; }
+  #apresentacao a {
+    margin-top: 40px;
+    display: inline-block;
+    color: #fff;
+    background-color: #FF6E6E;
+    text-decoration: none;
+    border-color: transparent;
+    border-radius: 0;
+    padding: 10px 60px;
+    font-size: 16px;
+    transition: .2s ease-in-out; }
+    #apresentacao a:hover {
+      opacity: .9; }
 
 /*# sourceMappingURL=style.css.map */

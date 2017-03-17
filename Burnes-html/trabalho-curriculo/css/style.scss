@@ -95,7 +95,7 @@ html, body {
   
     &:hover {
        span {
-           background: $color-accent;
+           opacity: .8;
        }
     }
     &.active {
@@ -114,7 +114,7 @@ html, body {
     }
   
     span {
-        background: $color-white;
+        background: $color-accent;
         border: none;
         height: 5px;
         width: 100%;
@@ -338,4 +338,65 @@ html, body {
     -webkit-animation: ani-mouse 2.5s linear infinite;
     -moz-animation: ani-mouse 2.5s linear infinite;
     animation: ani-mouse 2.5s linear infinite;
+}
+
+/*
+Section sobre
+*/
+#sobre {
+  height: 100vh;
+  background-color: $color-background;
+}
+
+#avatar {
+  background: url('../img/avatar.jpg');
+  background-size: cover;
+    background-position: center center;
+  min-height: 500px;
+  height: 100%;
+  width: 45%;
+  position: relative;
+  display: inline-block;
+}
+
+#apresentacao {
+  width: 50%;
+  min-height: 500px;
+  float: right;
+  padding-right: 10%;
+  padding-left: 3%;
+  padding-top: 5%;
+  height: 100%;
+
+  h2 {
+    color: #202532;
+    font-size: 35px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #202532;
+    line-height: 1.6rem;
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  a{
+    margin-top: 40px;
+    display: inline-block;
+    color: #fff;
+    background-color: $color-accent;
+    text-decoration: none;
+    border-color: transparent;
+    border-radius: 0;
+    padding: 10px 60px;
+    font-size: 16px;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
 }
