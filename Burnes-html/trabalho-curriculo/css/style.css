@@ -262,13 +262,13 @@ Section sobre
 */
 #sobre {
   height: 100vh;
-  background-color: #F5F5F5; }
+  background-color: #fff;
+  min-height: 100%; }
 
 #avatar {
   background: url("../img/avatar.jpg");
   background-size: cover;
   background-position: center center;
-  min-height: 500px;
   height: 100%;
   width: 45%;
   position: relative;
@@ -276,7 +276,6 @@ Section sobre
 
 #apresentacao {
   width: 50%;
-  min-height: 500px;
   float: right;
   padding-right: 10%;
   padding-left: 3%;
@@ -306,5 +305,142 @@ Section sobre
     transition: .2s ease-in-out; }
     #apresentacao a:hover {
       opacity: .9; }
+
+/*
+Section caracteristicas
+*/
+#caracteristicas {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background-color: #dddfeb;
+  padding-top: 40px; }
+  #caracteristicas h2 {
+    color: #202532;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase; }
+
+#habilidades {
+  padding: 3%; }
+  #habilidades div {
+    width: 23%;
+    padding: 25px;
+    color: #fff;
+    height: 350px;
+    display: inline-block; }
+    #habilidades div h3 {
+      font-size: 25px;
+      text-align: left;
+      text-transform: uppercase; }
+    #habilidades div span {
+      font-size: 45px; }
+    #habilidades div p {
+      line-height: 1.4rem;
+      font-size: 16px;
+      margin-bottom: 20px;
+      letter-spacing: 1px; }
+
+#habi-mobile, #habi-web, #habi-sql {
+  float: left;
+  margin-right: 2.32%; }
+
+#habi-mobile {
+  background: #10c6fc; }
+  #habi-mobile:hover {
+    background: #08627C;
+    transition: .2s ease-in-out; }
+
+#habi-web {
+  background: #835aeb; }
+  #habi-web:hover {
+    background: #3C296B;
+    transition: .2s ease-in-out; }
+
+#habi-sql {
+  background: #002453; }
+  #habi-sql:hover {
+    background: #00459F;
+    transition: .2s ease-in-out; }
+
+#habi-outros {
+  background: #ff2b4a; }
+  #habi-outros:hover {
+    background: #BF2037;
+    transition: .2s ease-in-out; }
+
+/*
+Section experiencia
+*/
+#experiencia {
+  background: url("../img/image-experiencia.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  min-height: 600px; }
+  #experiencia .content-experiencia {
+    padding: 3%;
+    height: 100vh;
+    min-height: 600px; }
+    #experiencia .content-experiencia h2 {
+      color: #FF6E6E;
+      font-size: 25px;
+      text-align: left;
+      text-transform: uppercase; }
+    #experiencia .content-experiencia h3 {
+      margin-top: 25px;
+      color: #202532;
+      font-size: 20px;
+      margin-bottom: 0px;
+      letter-spacing: 1px; }
+    #experiencia .content-experiencia p {
+      line-height: 1.0rem;
+      font-size: 16px;
+      letter-spacing: 1px; }
+
+#educacao {
+  background: rgba(255, 255, 255, 0.95);
+  width: 50%;
+  float: left;
+  padding: 20px; }
+
+#exp-profissional {
+  background: rgba(255, 255, 255, 0.95);
+  width: 40%;
+  padding: 20px;
+  float: right; }
+
+/*
+Footer
+*/
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  background: #222222;
+  text-align: center; }
+
+.main-footer .social {
+  margin-bottom: 10px; }
+
+.main-footer .social a {
+  color: #c3bec2;
+  font-size: 15px; }
+
+.main-footer .social a:hover {
+  color: #ff2b4a; }
+
+.main-footer .social a i {
+  border-right: 1px solid #c3bec2;
+  padding: 0 10px 0 10px; }
+
+.main-footer .social a i.fa-github {
+  border-right: 0; }
+
+.main-footer p {
+  color: #c3bec2;
+  font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */

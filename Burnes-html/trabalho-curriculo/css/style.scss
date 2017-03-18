@@ -1,11 +1,20 @@
 $fontes: "Roboto",  "sans-serif";
-$color-background: #F5F5F5;
+$color-background: #dddfeb;
 $color-accent: #FF6E6E;
 $color-active: #FFF;
 $color-link: #FFF;
 $color-white: #fff;
 $button-height: 27px;
 $button-width: 35px;
+
+$color-mobile: #10c6fc;
+$color-mobile-hover: #08627C;
+$color-web: #835aeb;
+$color-web-hover: #3C296B;
+$color-sql: #002453;
+$color-sql-hover: #00459F;
+$color-novas-tecnologias: #ff2b4a;
+$color-novas-tecnologias-hover: #BF2037;
 
 html, body {
     margin: 0px;
@@ -345,14 +354,14 @@ Section sobre
 */
 #sobre {
   height: 100vh;
-  background-color: $color-background;
+  background-color: $color-white;
+  min-height: 100%;
 }
 
 #avatar {
   background: url('../img/avatar.jpg');
   background-size: cover;
-    background-position: center center;
-  min-height: 500px;
+  background-position: center center;
   height: 100%;
   width: 45%;
   position: relative;
@@ -361,7 +370,6 @@ Section sobre
 
 #apresentacao {
   width: 50%;
-  min-height: 500px;
   float: right;
   padding-right: 10%;
   padding-left: 3%;
@@ -399,4 +407,179 @@ Section sobre
       opacity: .9;
     }
   }
+}
+
+/*
+Section caracteristicas
+*/
+#caracteristicas {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background-color: $color-background;
+    padding-top: 40px;
+
+    h2 {
+      color: #202532;
+      font-size: 35px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+}
+
+#habilidades {
+    padding: 3%;
+    div {
+        width: 23%;
+        padding: 25px;
+        color: $color-white;
+        height: 350px;
+        display: inline-block;
+
+        h3 {
+        font-size: 25px;
+        text-align: left;
+        text-transform: uppercase;
+        }
+
+        span {
+            font-size: 45px;
+        }
+
+        p{
+            line-height: 1.4rem;
+            font-size: 16px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+#habi-mobile, #habi-web, #habi-sql{
+    float: left;
+    margin-right: 2.32%;
+}
+
+#habi-mobile {
+    background: $color-mobile;
+    
+    &:hover {
+        background: $color-mobile-hover;
+        transition: .2s ease-in-out;
+    }
+}
+
+#habi-web {
+    background: $color-web;
+
+    &:hover {
+        background: $color-web-hover;
+        transition: .2s ease-in-out;
+    }
+} 
+
+#habi-sql {
+    background: $color-sql;
+
+    &:hover {
+        background: $color-sql-hover;
+        transition: .2s ease-in-out;
+    }
+}
+
+#habi-outros {
+    background: $color-novas-tecnologias;
+
+    &:hover {
+        background: $color-novas-tecnologias-hover;
+        transition: .2s ease-in-out;
+    }
+}
+
+/*
+Section experiencia
+*/
+
+#experiencia {
+    background: url("../img/image-experiencia.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+
+    .content-experiencia {
+        padding: 3%;
+        height: 100vh;
+        min-height: 600px;
+
+        h2 {
+            color: $color-accent;
+            font-size: 25px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            margin-top: 25px;
+            color: #202532;
+            font-size: 20px;
+            margin-bottom: 0px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            line-height: 1.0rem;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+#educacao {
+    background: rgba(255, 255, 255, 0.95);
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+#exp-profissional {
+    background: rgba(255, 255, 255, 0.95);
+    width: 40%;
+    padding: 20px;
+    float: right;
+}
+/*
+Footer
+*/
+.footer {
+    padding-top:50px;
+    padding-bottom:50px;
+    color:#fff;
+    background:#222222;
+    text-align: center;
+}
+
+.main-footer .social{
+    margin-bottom:10px;
+}
+.main-footer .social a{
+    color:#c3bec2;
+    font-size:15px;
+}
+.main-footer .social a:hover{
+    color:#ff2b4a;
+}
+.main-footer .social a i{
+    border-right:1px solid #c3bec2;
+    padding:0 10px 0 10px;
+}
+.main-footer .social a i.fa-github{
+    border-right:0;
+}
+.main-footer p{
+    color:#c3bec2;
+    font-size:12px;	
 }

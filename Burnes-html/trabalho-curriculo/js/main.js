@@ -1,7 +1,15 @@
 var toggle = document.getElementById("toggle");
 var overlay = document.getElementById("overlay");
 
+function clickLink(){
+    console.log("aki")
+    toggle.classList.toggle('active');
+    overlay.classList.toggle('open');
+}
+
+
 toggle.onclick = function(){
+    console.log(this)
     this.classList.toggle('active');
     overlay.classList.toggle('open');
 }

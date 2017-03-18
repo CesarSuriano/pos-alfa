@@ -22,12 +22,11 @@
     <div class="overlay" id="overlay">
         <nav class="overlay-menu">
             <ul>
-                <li><a href="#home" class="page-scroll"><span>Home</span></a></li>
-                <li><a href="#sobre" class="page-scroll"><span>Sobre</span></a></li>
-                <li><a href="#caracteristicas" class="page-scroll"><span>Características</span></a></li>
-                <li><a href="#experiencia" class="page-scroll"><span>Experiência</span></a></li>
+                <li><a href="#home" id="link-home" class="page-scroll" onclick="clickLink()"><span>Home</span></a></li>
+                <li><a href="#sobre" id="link-sobre" class="page-scroll" onclick="clickLink()"><span>Sobre</span></a></li>
+                <li><a href="#caracteristicas" id="link-caracteristicas" class="page-scroll" onclick="clickLink()"><span>Características</span></a></li>
+                <li><a href="#experiencia" id="link-experiencia" class="page-scroll" onclick="clickLink()"><span>Experiência</span></a></li>
                 <!--<li><a href="#fotos" class="page-scroll"><span>Fotos</span></a></li>-->
-                <li><a href="#mais-informacoes" class="page-scroll"><span>Mais informações</span></a></li>
             </ul>
         </nav>
     </div>
@@ -39,9 +38,9 @@
                 <h1>OLÁ, EU SOU O <span id="nome">CÉSAR</span></h1>
                 <h4>
                     <span class="descricao">Futuro Designer</span>
-                    <span class="icone-descricao fa fa-heart"></span>
+                    <span class="icone-descricao fa fa-star"></span>
                     <span class="descricao">Programador</span>
-                    <span class="icone-descricao fa fa-heart"></span>
+                    <span class="icone-descricao fa fa-star"></span>
                     <span class="descricao">Rei do FIFA (nas horas vagas)</span>
                 </h4>
 
@@ -68,7 +67,7 @@
                 Me formei em Análise e Desenvolvimento de Sistemas pela Unipar no ano de 2016. Atualmente trabalho como desenvolvedor na
                 empresa Arus T.I, além de estar cursando uma Pós-Graduação em Desenvolvimento WebMobile na Faculdade Alfa.
             </p>
-            <a href="#mais-informacoes">CONTRATE-ME</a>
+            <a href="#footer" id="btn-contrateme">CONTRATE-ME</a>
         </div>
     </section>
 
@@ -76,7 +75,7 @@
         <h2>Algumas de minhas habilidades</h2>
         <div id="habilidades">
             <div id="habi-mobile" class="habis">
-                <span class="icone-habilidade"></span>
+                <span class="fa fa-mobile"></span>
                 <h3 class="titulo-habilidade">MOBILE APPS</h3>
                 <p class="descricao-habilidade">
                     Um grande entuziasta de aplicativos nativos. Apesar de ter mais familiaridade com Java, estou sempre buscando me aprofundar
@@ -85,7 +84,7 @@
             </div>
 
             <div id="habi-web" class="habis">
-                <span class="icone-habilidade"></span>
+                <span class="fa fa-chrome"></span>
                 <h3 class="titulo-habilidade">WEB</h3>
                 <p class="descricao-habilidade">
                     Sempre fui fascinado por interfaces bonitas e bem feitas, e o que dizer do javascript, essa linguagem que sempre odiei e
@@ -94,7 +93,7 @@
             </div>
 
             <div id="habi-sql" class="habis">
-                <span class="icone-habilidade"></span>
+                <span class="fa fa-database"></span>
                 <h3 class="titulo-habilidade">SQL</h3>
                 <p class="descricao-habilidade">
                     Simplesmente a linguagem mais intuitiva que existe, sem mais.
@@ -102,61 +101,64 @@
             </div>
 
             <div id="habi-outros" class="habis">
-                <span class="icone-habilidade"></span>
+                <span class="fa fa-heart"></span>
                 <h3 class="titulo-habilidade">NOVAS TÉCNOLOGIAS</h3>
                 <p class="descricao-habilidade">
                     Adoro ficar antenado no que sai de novo na área de tecnologia, porém são tantas coisas que fico chateado em saber que não
-                    posso aprender todas (iconezinho triste)
+                    posso aprender todas.
                 </p>
             </div>
         </div>
     </section>
 
     <section id="experiencia">
-        <div id="exp-proficional">
-            <h2>Experiência Profissional</h2>
-            <h3>Arus T.I</h3>
-            <p class="desc-experiencia">
-                Outubro 2016 - Março 2017
-            </p>
-            <p class="desc-experiencia">
-                Foi a minha primeira experiência profissional com o ramo de desenvolvimento de software. A cinco meses trabalho como programador
-                nesta empresa onde tive a oportunidade de conhecer várias coisas novas e melhorar o que já conhecia.
-            </p>
-        </div>
-        <div id="educacao">
-            <h2>Educação</h2>
-            <div id="educacao-unipar">
-                <h3>Unipar - Análise e Desenvolvimento de Sistemas</h3>
-                <p class="desc-educacao">
-                    Fevereiro 2014 - Dezembro 2016
-                </p>
-                <p class="desc-educacao">
-                    Foi onde tive os meu primeiros contatos com a área de tecnologia. Aprendi a programar, para que serve um banco de dados e
-                    o principal, é possivel aprender a programar fazendo pão com ovo(só os fortes entenderão).
-                </p>
+        <div class="content-experiencia">
+            <div id="educacao">
+                <h2>Educação</h2>
+                <div class="educacao-unipar">
+                    <h3>Unipar - Análise e Desenvolvimento de Sistemas</h3>
+                    <p class="desc-educacao">
+                        Fevereiro 2014 - Dezembro 2016
+                    </p>
+                    <p class="desc-educacao">
+                        Foi onde tive os meu primeiros contatos com a área de tecnologia. Aprendi a programar, para que serve um banco de dados e
+                        o principal, é possivel aprender a programar fazendo pão com ovo(só os fortes entenderão).
+                    </p>
+                </div>
+
+                <div class="educacao-alfa">
+                    <h3>Alfa Pós-Graduação em Desenvolvimento WebMobile</h3>
+                    <p class="desc-educacao">
+                        Fevereiro 2017 - 2018
+                    </p>
+                    <p class="desc-educacao">
+                        A área de WEB e Mobile foram com certeza as que mais me facinavam na faculdade, por esse motivo resolvi me especializar nessa
+                        área.
+                    </p>
+                </div>
+
+                <div class="educacao-uem">
+                    <h3>UEM - Design de Produto</h3>
+                    <p class="desc-educacao">
+                        Abril 2017 - Dezembro 2020
+                    </p>
+                    <p class="desc-educacao">
+                        Logo nos primeiros meses do curso de Análise de Sistemas, percebi que alguns sites, sistemas e aplicativos, são muito mais
+                        bonito e faceis de usar do que outros. Foi assim que conheci e comecei a me interessar sobre Design
+                        e decidi que iria me aprofundar nessa área o quanto antes possível.
+                    </p>
+                </div>
             </div>
 
-            <div id="educacao-alfa">
-                <h3>Alfa Pós-Graduação em Desenvolvimento WebMobile</h3>
-                <p class="desc-educacao">
-                    Fevereiro 2017 - 2018
+            <div id="exp-profissional">
+                <h2>Experiência</h2>
+                <h3>Arus T.I</h3>
+                <p class="desc-experiencia">
+                    Outubro 2016 - Março 2017
                 </p>
-                <p class="desc-educacao">
-                    A área de WEB e Mobile foram com certeza as que mais me facinavam na faculdade, por esse motivo resolvi me especializar nessa
-                    área.
-                </p>
-            </div>
-
-            <div id="educacao-uem">
-                <h3>UEM - Design de Produto</h3>
-                <p class="desc-educacao">
-                    Abril 2017 - Dezembro 2020
-                </p>
-                <p class="desc-educacao">
-                    Logo nos primeiros meses do curso de Análise de Sistemas, percebi que alguns sites, sistemas e aplicativos, são muito mais
-                    bonito e faceis de usar do que outros. Foi assim que conheci e comecei a me interessar sobre Design e
-                    decidi que iria me aprofundar nessa área o quanto antes possível.
+                <p class="desc-experiencia">
+                    Foi a minha primeira experiência profissional com o ramo de desenvolvimento de software. A cinco meses trabalho como programador
+                    nesta empresa onde tive a oportunidade de conhecer várias coisas novas e melhorar o que já conhecia.
                 </p>
             </div>
         </div>
@@ -170,7 +172,7 @@
         </div>
     </section>-->
 
-    <section id="mais-informacoes">
+    <!--<section id="mais-informacoes">
         <div id="informacoes">
             <div id="endereco">
                 <h2>Endereço</h2>
@@ -202,10 +204,20 @@
         <div id="contato">
 
         </div>
-    </section>
+    </section>-->
 
-    <footer id="footer">
-        <p>CÉSAR AUGUSTO © 2017 TUDO FEITO POR MIM</p>
+
+
+    <footer id="footer" class="footer">
+        <div class="main-footer">
+            <div class="social">
+                <a target="_blank" href="https://www.facebook.com/Cesarkg6"><i class="fa fa-facebook"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/c%C3%A9sar-augusto-1a11ba70/"><i class="fa fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/CesarSuriano"><i class="fa fa-github"></i></a>
+            </div>
+
+            <p>CÉSAR AUGUSTO © 2017 TUDO FEITO POR MIM</p>
+        </div>
     </footer>
 
     <script type="text/javascript" src="js/jquery.js"></script>

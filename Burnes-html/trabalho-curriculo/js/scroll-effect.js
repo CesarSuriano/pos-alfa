@@ -3,30 +3,33 @@
 
 	function init() {
 		//Links 
-		let anchor1Link  = d.getElementById('mouse-link');
-		// let anchor2Link  = d.getElementById('anchor2Link');
-		// let anchor3Link  = d.getElementById('anchor3Link');
-		// let anchor4Link  = d.getElementById('anchor4Link');
-		// let anchor1Link2 = d.getElementById('anchor1Link2');
-		// let anchor2Link2 = d.getElementById('anchor2Link2');
+		let anchor1Link  = d.getElementById('link-home');
+		let anchor2Link  = d.getElementById('mouse-link');
+		let anchor3Link  = d.getElementById('link-caracteristicas');
+		let anchor4Link  = d.getElementById('link-experiencia');
+		let anchor5Link  = d.getElementById('btn-contrateme');
+		// let anchor1Link2 = d.getElementById('');
+		let anchor2Link2 = d.getElementById('link-sobre');
 		// let anchor3Link2 = d.getElementById('anchor3Link2');
 		// let anchor4Link2 = d.getElementById('anchor4Link2');
 		//Anchors
-		let anchor1      = d.getElementById('sobre');
-		// let anchor2      = d.getElementById('anchor2');
-		// let anchor3      = d.getElementById('anchor3');
-		// let anchor4      = d.getElementById('anchor4');
+		let anchor1      = d.getElementById('home');
+		let anchor2      = d.getElementById('sobre');
+		let anchor3      = d.getElementById('caracteristicas');
+		let anchor4      = d.getElementById('experiencia');
+		let anchor5      = d.getElementById('footer');
 		
 		anchor1Link.addEventListener('click', (e) => { scrollTo(anchor1, e) }, false);
 		//anchor1Link2.addEventListener('click', (e) => { scrollTo(anchor1, e) }, false);
-		// anchor2Link.addEventListener('click', (e) => { scrollTo(anchor2, e) }, false);
-		// anchor2Link2.addEventListener('click', (e) => { scrollTo(anchor2, e) }, false);
+		anchor2Link.addEventListener('click', (e) => { scrollTo(anchor2, e) }, false);
+		anchor2Link2.addEventListener('click', (e) => { scrollTo(anchor2, e) }, false);
 		// // anchor2Link.onclick = function() { scrollToSimple(document.documentElement, 500, 3000); }
 		// // anchor2Link2.onclick = function() { scrollToSimple(document.documentElement, 0, 3000); }
-		// anchor3Link.addEventListener('click', (e) => { scrollTo(anchor3, e) }, false);
+		anchor3Link.addEventListener('click', (e) => { scrollTo(anchor3, e) }, false);
 		// anchor3Link2.addEventListener('click', (e) => { scrollTo(anchor3, e) }, false);
-		// anchor4Link.addEventListener('click', (e) => { scrollTo(anchor4.offsetTop, e) }, false);
+		anchor4Link.addEventListener('click', (e) => { scrollTo(anchor4.offsetTop, e) }, false);
 		// anchor4Link2.addEventListener('click', (e) => { scrollTo(anchor4.offsetTop, e) }, false);
+		anchor5Link.addEventListener('click', (e) => { scrollTo(anchor5.offsetTop, e) }, false);
 		
 		// console.log(anchor2); //DEBUG
 		// console.log('anchor1: '+scrollTopValue(anchor1)+' / '+offsetTopValue(anchor1)); //DEBUG
