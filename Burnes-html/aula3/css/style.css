@@ -1,3 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
 
+body {
+  background: linear-gradient(to top, #fff, #ccc) fixed; }
+
+.no-cssgradients body {
+  background: #999; }
+
+header {
+  background: #000;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 999; }
+  header nav {
+    float: right;
+    margin-top: 15px; }
+    header nav ul li {
+      display: inline;
+      list-style: none; }
+      header nav ul li a {
+        font: 1.2em "Open Sans", Tahoma, Verdana;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.5;
+        margin-left: 20px; }
+        header nav ul li a:hover {
+          color: #f00; }
+
+footer {
+  width: 100%;
+  background: #000;
+  padding: 20px 0px;
+  float: left; }
+  footer a {
+    font-size: 2.5em;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5; }
+    footer a:hover {
+      color: #f00; }
+  footer p {
+    font: 1.2em "Open Sans", Tahoma, Verdana;
+    color: #fff; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.center {
+  text-align: center; }
+
+.clear {
+  clear: both; }
+
+.texto {
+  position: absolute;
+  top: 200px;
+  color: #fff;
+  font-family: "Fjalla One", Arial;
+  left: 30px;
+  text-shadow: 2px 2px 1px #000; }
+  .texto p {
+    font-size: 1.4em; }
+  .texto h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .texto .btn {
+    border: 1px solid #fff;
+    transition: all 0.5;
+    padding: 5px;
+    text-shadow: 0 0 0 transparent;
+    color: #fff;
+    text-decoration: none; }
+    .texto .btn:hover {
+      background: #fff;
+      color: #000; }
+
+.container {
+  width: 1000px;
+  margin: auto; }
+  .container h1 {
+    font: 3em "Fjalla One", Arial;
+    margin: 50px 0px 20px 0px; }
+  .container h2 {
+    font: 2em "Fjalla One", Arial;
+    color: #ccc;
+    margin-bottom: 20px; }
+  .container p {
+    font: 1.2em "Open Sans", Tahoma, Verdana;
+    text-align: justify;
+    margin: 10px 0px; }
+
+.img {
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 2px 2px 2px #ccc;
+  transform: rotate(-2deg); }
+
+#banner {
+  width: 100%;
+  padding-top: 70px; }
+  #banner img {
+    width: 100%; }
+
+#filmes {
+  width: 100%;
+  background: url(../images/bg.jpg) fixed;
+  padding: 50px 0px;
+  float: left; }
+  #filmes h2 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px; }
+  #filmes .filme {
+    width: 33%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box; }
+  #filmes img {
+    filter: sepia(80%);
+    transition: all 0.5; }
+    #filmes img:hover {
+      filter: sepia(0%); }
+
+#menu {
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 1.5em;
+  float: right;
+  margin-top: 10px;
+  display: none; }
+
+@media (max-width: 320px) {
+  #menu {
+    display: block; }
+
+  nav {
+    display: none;
+    background: #000;
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 1000; }
+    nav ul li {
+      display: block; }
+      nav ul li a {
+        padding: 10px;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        float: left; }
+
+  .texto {
+    top: 80px; }
+    .texto p {
+      font-size: 1em; }
+    .texto h1 {
+      font-size: 1.5em; }
+
+  .container {
+    width: 320px;
+    padding: 10px;
+    box-sizing: border-box; }
+
+  .filme {
+    width: 100% !important; }
+    .filme img {
+      transform: rotate(0deg); } }
 
 /*# sourceMappingURL=style.css.map */
