@@ -101,11 +101,20 @@ footer {
     margin: 10px 0px; }
 
 .img {
-  width: 100%;
+  width: 90%;
   background: #fff;
   padding: 10px;
   box-shadow: 2px 2px 2px #ccc;
   transform: rotate(-2deg); }
+
+.col1 {
+  width: 30%; }
+
+.col2 {
+  width: 70%; }
+
+.top {
+  padding-top: 70px; }
 
 #banner {
   width: 100%;
@@ -176,6 +185,14 @@ footer {
   .filme {
     width: 100% !important; }
     .filme img {
-      transform: rotate(0deg); } }
+      transform: rotate(0deg); }
+
+  .col1, .col2 {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; }
+
+  .top {
+    padding-top: 90px; } }
 
 /*# sourceMappingURL=style.css.map */

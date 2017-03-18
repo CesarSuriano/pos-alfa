@@ -1,0 +1,2 @@
+Fazer as telas que faltam e os outros media queries
+mesmo email da aula 2 ate dia 31

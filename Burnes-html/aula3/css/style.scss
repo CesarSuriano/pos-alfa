@@ -155,11 +155,23 @@ footer {
 }
 
 .img {
-    width: 100%;
+    width: 90%;
     background: $cor4;
     padding: 10px;
     box-shadow: 2px 2px 2px $cor3;
     transform: rotate(-2deg);
+}
+
+.col1 {
+    width: 30%;
+}
+
+.col2 {
+    width: 70%;
+}
+
+.top {
+    padding-top: 70px;
 }
 
 //IDS
@@ -261,4 +273,18 @@ footer {
             transform: rotate(0deg);
         }
     }
+
+    .col1, .col2 {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .top {
+        padding-top: 90px;
+    }
+}
+
+@media(min-width: 321) and (max-width: 480px) {
+    
 }
