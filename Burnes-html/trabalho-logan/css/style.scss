@@ -2,16 +2,16 @@
 
 $texto  : "Open Sans", Tahoma, Verdana;
 $titulo : "Fjalla One", Arial;
-$cor1: #000;
-$cor2: #f00;
-$cor3: #ccc;
-$cor4: #fff;
+$color-black: #000;
+$color-red: #f00;
+$color-grey-666: #666;
+$color-white: #fff;
 
 $transicao: all 0.5;
 
 @mixin texto(){
     font : 1.2em $texto;
-    color: $cor4;
+    color: $color-white;
 }
 
 //Tags
@@ -22,15 +22,19 @@ $transicao: all 0.5;
 }
 
 body {
-    background: linear-gradient(to top, $cor4, $cor3) fixed;
+    background: linear-gradient(to top, $color-white, $color-grey-666) fixed;
 }
 
 .no-cssgradients body {
     background: #999;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 header {
-    background: $cor1;
+    background: $color-black;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -53,27 +57,31 @@ header {
                 margin-left: 20px;
 
                 &:hover {
-                    color: $cor2;
+                    color: $color-red;
                 }
             }
         }
     }
 }
 
+main {
+    padding: 20px 0;
+}
+
 footer {
     width: 100%;
-    background: $cor1;
+    background: $color-black;
     padding: 20px 0px;
     float: left;
 
     & a {
         font-size: 2.5em;
-        color: $cor4;
+        color: $color-white;
         text-decoration: none;
         transition: $transicao;
 
         &:hover {
-            color: $cor2;
+            color: $color-red;
         }
     }
 
@@ -95,6 +103,7 @@ footer {
     text-align: center;
 }
 
+//Reveja esta porra aqui
 .clear {
     clear: both;
 }
@@ -102,10 +111,10 @@ footer {
 .texto {
     position: absolute;
     top: 200px;
-    color: $cor4;
+    color: $color-white;
     font-family: $titulo;
     left: 30px;
-    text-shadow: 2px 2px 1px $cor1;
+    text-shadow: 2px 2px 1px $color-black;
 
     & p {
         font-size: 1.4em;
@@ -118,16 +127,16 @@ footer {
     } 
 
     & .btn {
-        border: 1px solid $cor4;
+        border: 1px solid $color-white;
         transition: $transicao;
         padding: 5px;
         text-shadow: 0 0 0 transparent;
-        color: $cor4;
+        color: $color-white;
         text-decoration: none;
 
         &:hover {
-            background: $cor4;
-            color: $cor1;
+            background: $color-white;
+            color: $color-black;
         }
     }
 }
@@ -143,24 +152,25 @@ footer {
 
     & h2 {
         font: 2em $titulo;
-        color: $cor3;
+        color: $color-grey-666;
         margin-bottom: 20px;
     }
 
     & p {
         font: 1.2em $texto;
         text-align: justify;
-        margin: 10px 0px
+        margin: 30px 0px
     }
 }
 
 .img {
     width: 90%;
-    background: $cor4;
+    background: $color-white;
     padding: 10px;
-    box-shadow: 2px 2px 2px $cor3;
+    box-shadow: 2px 2px 2px $color-grey-666;
     transform: rotate(-2deg);
 }
+
 
 .col1 {
     width: 30%;
@@ -172,6 +182,33 @@ footer {
 
 .top {
     padding-top: 70px;
+}
+
+.filme-detalhes {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+
+    & h2 {
+        font: 2em $titulo;
+        color: $color-black;
+        margin-bottom: 10px;
+    }
+
+    & p {
+        margin: 0;
+        font-size: 17px;
+    }
+
+    & img {
+        filter: grayscale(80%);
+        transition: $transicao;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
 }
 
 //IDS
@@ -191,7 +228,7 @@ footer {
     float: left;
     & h2 {
         text-transform: uppercase;
-        color: $cor4;
+        color: $color-white;
         margin-bottom: 20px;
     }
 
@@ -200,6 +237,15 @@ footer {
         float: left;
         padding: 20px;
         box-sizing: border-box;
+
+        & img {
+            filter: sepia(80%);
+            transition: $transicao;
+
+            &:hover {
+                filter: sepia(0%);
+            }
+        }
     }
 
     & img {
@@ -213,9 +259,9 @@ footer {
 }
 
 #menu {
-    border: 2px solid $cor4;
+    border: 2px solid $color-white;
     padding: 5px 10px;
-    color: $cor4;
+    color: $color-white;
     font-size: 1.5em;
     float: right;
     margin-top: 10px;
@@ -230,7 +276,7 @@ footer {
     
     nav {
         display: none;
-        background: $cor1;
+        background: $color-black;
         width: 100%;
         float: left;
         position: relative;
@@ -242,7 +288,7 @@ footer {
             & a {
                 padding: 10px;
                 width: 100%;
-                border-bottom: 1px solid $cor4;
+                border-bottom: 1px solid $color-white;
                 float: left;
             }
         }
