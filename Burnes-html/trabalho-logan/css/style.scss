@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans');
+
+$texto  : "Open Sans", Tahoma, Verdana;
+$titulo : "Fjalla One", Arial;
+$cor1: #000;
+$cor2: #f00;
+$cor3: #ccc;
+$cor4: #fff;
+
+$transicao: all 0.5;
+
+@mixin texto(){
+    font : 1.2em $texto;
+    color: $cor4;
+}
+
+//Tags
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: linear-gradient(to top, $cor4, $cor3) fixed;
+}
+
+.no-cssgradients body {
+    background: #999;
+}
+
+header {
+    background: $cor1;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+
+    & nav {
+        float: right;
+        margin-top: 15px;
+
+        & ul li {
+            display: inline;
+            list-style: none;
+
+            & a {
+                @include texto();
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: $transicao;
+                margin-left: 20px;
+
+                &:hover {
+                    color: $cor2;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background: $cor1;
+    padding: 20px 0px;
+    float: left;
+
+    & a {
+        font-size: 2.5em;
+        color: $cor4;
+        text-decoration: none;
+        transition: $transicao;
+
+        &:hover {
+            color: $cor2;
+        }
+    }
+
+    & p {
+        @include texto();
+    }
+}
+
+//Classes
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.texto {
+    position: absolute;
+    top: 200px;
+    color: $cor4;
+    font-family: $titulo;
+    left: 30px;
+    text-shadow: 2px 2px 1px $cor1;
+
+    & p {
+        font-size: 1.4em;
+    }
+
+    & h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    } 
+
+    & .btn {
+        border: 1px solid $cor4;
+        transition: $transicao;
+        padding: 5px;
+        text-shadow: 0 0 0 transparent;
+        color: $cor4;
+        text-decoration: none;
+
+        &:hover {
+            background: $cor4;
+            color: $cor1;
+        }
+    }
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+
+    & h1 {
+        font: 3em $titulo;
+        margin: 50px 0px 20px 0px;
+    }
+
+    & h2 {
+        font: 2em $titulo;
+        color: $cor3;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        font: 1.2em $texto;
+        text-align: justify;
+        margin: 10px 0px
+    }
+}
+
+.img {
+    width: 90%;
+    background: $cor4;
+    padding: 10px;
+    box-shadow: 2px 2px 2px $cor3;
+    transform: rotate(-2deg);
+}
+
+.col1 {
+    width: 30%;
+}
+
+.col2 {
+    width: 70%;
+}
+
+.top {
+    padding-top: 70px;
+}
+
+//IDS
+#banner {
+    width: 100%;
+    padding-top: 70px;
+
+    & img{
+        width: 100%;
+    }
+}
+
+#filmes {
+    width: 100%;
+    background: url(../images/bg.jpg) fixed;
+    padding: 50px 0px;
+    float: left;
+    & h2 {
+        text-transform: uppercase;
+        color: $cor4;
+        margin-bottom: 20px;
+    }
+
+    & .filme {
+        width: 33%;
+        float: left;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    & img {
+        filter: sepia(80%);
+        transition: $transicao;
+
+        &:hover {
+            filter: sepia(0%);
+        }
+    }
+}
+
+#menu {
+    border: 2px solid $cor4;
+    padding: 5px 10px;
+    color: $cor4;
+    font-size: 1.5em;
+    float: right;
+    margin-top: 10px;
+    display: none;
+}
+
+//Media queries
+@media (max-width: 320px) {
+    #menu {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+        background: $cor1;
+        width: 100%;
+        float: left;
+        position: relative;
+        z-index: 1000;
+
+        & ul li {
+            display: block;            
+
+            & a {
+                padding: 10px;
+                width: 100%;
+                border-bottom: 1px solid $cor4;
+                float: left;
+            }
+        }
+    }
+
+    .texto {
+        top: 80px;
+
+        & p {
+            font-size: 1em;
+        }
+
+        & h1 {
+            font-size: 1.5em;
+        }
+    }
+
+    .container {
+        width: 320px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .filme {
+        width: 100% !important;
+
+        & img {
+            transform: rotate(0deg);
+        }
+    }
+
+    .col1, .col2 {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .top {
+        padding-top: 90px;
+    }
+}
+
+@media(min-width: 321) and (max-width: 480px) {
+    
+}
