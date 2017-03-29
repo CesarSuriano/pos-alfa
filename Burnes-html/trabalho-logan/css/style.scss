@@ -226,6 +226,7 @@ footer {
 #content {
 	padding-bottom:114px; /* Height of the footer element */
 }
+
 #footer {
 	width:100%;
 	position:absolute;
@@ -354,4 +355,85 @@ footer {
 
 @media(min-width: 321) and (max-width: 480px) {
     
+}
+
+//Form de contato
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;//Revisar essa porra de box-sizing e shadow
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+
+  textarea {
+    height: 126px;
+    margin-left: 10px;//Revisar para ocupar 100% do form e alinhar com o botão
+  }
+
+  input, textarea {
+    border: 0;
+    outline: 0;//Revisar
+    padding: 1em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;//Revisar
+
+    &:focus {
+      -moz-box-shadow: 0 0px 2px #e74c3c !important;
+      -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+      box-shadow: 0 0px 2px #e74c3c !important;
+    }
+  }
+
+  #input-submit {
+    color: white;
+    background: #e74c3c;
+    cursor: pointer;
+
+    &:hover {
+      -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+      -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+      box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+    }
+  }
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;//Revisar
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
 }
