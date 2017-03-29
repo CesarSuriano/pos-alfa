@@ -21,6 +21,12 @@ $transicao: all 0.5;
     border: 0;
 }
 
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
 body {
     background: linear-gradient(to top, $color-white, $color-grey-666) fixed;
 }
@@ -212,6 +218,21 @@ footer {
 }
 
 //IDS
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#content {
+	padding-bottom:114px; /* Height of the footer element */
+}
+#footer {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
 #banner {
     width: 100%;
     padding-top: 70px;
