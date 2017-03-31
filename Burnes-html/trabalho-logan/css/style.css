@@ -199,49 +199,6 @@ footer {
   margin-top: 10px;
   display: none; }
 
-@media (max-width: 320px) {
-  #menu {
-    display: block; }
-
-  nav {
-    display: none;
-    background: #000;
-    width: 100%;
-    float: left;
-    position: relative;
-    z-index: 1000; }
-    nav ul li {
-      display: block; }
-      nav ul li a {
-        padding: 10px;
-        width: 100%;
-        border-bottom: 1px solid #fff;
-        float: left; }
-
-  .texto {
-    top: 80px; }
-    .texto p {
-      font-size: 1em; }
-    .texto h1 {
-      font-size: 1.5em; }
-
-  .container {
-    width: 320px;
-    padding: 10px;
-    box-sizing: border-box; }
-
-  .filme {
-    width: 100% !important; }
-    .filme img {
-      transform: rotate(0deg); }
-
-  .col1, .col2 {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box; }
-
-  .top {
-    padding-top: 90px; } }
 *,
 *:before,
 *:after {
@@ -305,16 +262,60 @@ form {
 .cf:after {
   clear: both; }
 
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
-/*==========  Non-Mobile First Method  ==========*/
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
-/* Custom, iPhone Retina */
+@media (max-width: 320px) {
+  #menu {
+    display: block;
+    font-size: 1em;
+    padding: 5px 7px; }
+
+  nav {
+    display: none;
+    background: #000;
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 1000; }
+    nav ul li {
+      display: block; }
+      nav ul li a {
+        padding: 10px;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        float: left; }
+
+  .texto {
+    top: 4%;
+    left: 5%; }
+    .texto p {
+      font-size: .8em; }
+    .texto h1 {
+      font-size: 1em; }
+
+  .container {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box; }
+    .container h1 {
+      font-size: 1.5em;
+      margin: 15% 0; }
+
+  .filme {
+    width: 100% !important; }
+    .filme img {
+      transform: rotate(0deg); }
+
+  .col1, .col2 {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; }
+
+  .top {
+    padding-top: 90px; } }
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+/* smartphones, Android phones, landscape iPhone */
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+/* big landscape tablets, laptops, and desktops */
+/* hi-res laptops and desktops */
 
 /*# sourceMappingURL=style.css.map */
