@@ -2,14 +2,16 @@
 
 let p = new Promise((resolve, reject) => {
     mostrarLoading();
-    reject(1);
+    //reject(1);
+    resolve(1);
 })
 .then(validarNome)
 .then(validarEmail)
 .then(validarCpf)
 .then(validarIdade)
 .then(validarGenero)
-.catch(tratarReject);
+.catch(tratarReject)
+.then(esconderLoading);
 
 function tratarReject(reason) {
     console.log(reason);
@@ -50,4 +52,8 @@ function validarIdade(result) {
 function validarGenero(result) {
     console.log("Validar Genero");
     return result;
+}
+
+function esconderLoading() {
+    console.log("Esconder loading");
 }
