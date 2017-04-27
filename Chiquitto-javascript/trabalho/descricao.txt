@@ -1,0 +1,22 @@
+1. Criar uma funcão que recebe um ano, e retorna true se o ano é bissexto. Senão false;
+2. Criar uma função que determina se uma palavra é um isograma. Deve retornar true se palavra é um isograma;
+===
+3. Criar:
+3.1. Diagrama de Classes (UML) de uma loja online de livros, com as classes:
+Loja
+Livro
+Livro Impresso
+Ebook
+Venda
+Pessoa
+Vendedor
+Cliente
+3.2. Implementação em Javascript das classes (com métodos e atributos) do diagrama UML.
+3.3. Exemplo de uso das classes
+Instanciar, fazer a chamada dos métodos para realizar uma venda.
+===
+4. Uso de Promises
+Para saber qual a melhor opção, o motorista deve fazer uma conta simples. Embora mais barato, o etanol é um combustível que é consumido mais rápido pelo motor flex de um carro em relação à gasolina. Por isso, para identificar qual dos dois é mais vantajoso é preciso dividir o preço do litro do etanol pelo valor do litro da gasolina. Se o resultado da conta for maior que 0,7, vale a pena colocar gasolina, se for menor, o melhor é o consumidor abastecer com etanol.
+Criar uma calculadora, no qual é informado o preço da Gasolina e do Etanol, e em seguida o usuário clica em um botão. Ao final, a calculadora informa para o usuário qual é o combustível mais vantajoso.
+
+Utilizar Promises para realizar todas as tarefas da calculadora.
