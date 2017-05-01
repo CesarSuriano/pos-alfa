@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <title>Exemplo 1</title>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+        $("form").on("submit", function (event) {
+            event.preventDefault();
+            console.log($(this).serializeArray());
+        });
+        
+        $('li').eq(2).css('color', 'yellow');
+        
+            $('#bt-enviar').click(function() {
+                $('input[type=text]').css('background', 'white');
+
+                document.getElementById('nome').style.color="#FF0000";
+                document.getElementById('idade').style.color="#FF0000";
+                document.getElementById('email').style.color="#FF0000";
+
+                $('h2').fadeOut();
+
+                $('input[type=text]').each(function() {
+                    if($(this).val() == '') $(this).css('background', 'red');
+            });
+        });
+
+        $('#bt-limpar').click(function() {
+            $('input[type=text]').each(function() {
+                if($(this).val() != '') {
+                    $('input[type=text]').val('');
+                }
+            })
+        })
+    });
+
+    </script>
+    </head>
+
+    <body>
+        <h1>Exemplo de formulário</h1>
+        <form id="form1" method="post" action="">
+        <label for="nome" id="nome">Nome:</label> 
+        <input id="nome" name="nome" type="text" /><br />
+        <label for="idade" id="idade">Idade:</label>
+        <input id="idade" name="idade" type="text" /><br />
+        <label for="email" id="email">e-mail:</label>
+        <input id="email" name="email" type="text" /><br />
+        <input type="submit" id="bt-enviar" value="Enviar" />
+        <button id="bt-limpar">Limpar</button>
+    </form>
+
+    <h2>Exercícios</h2>
+
+    <ol id="lista-exercicios">
+        <li>Ao clicar no botão enviar, o formulário deve colocar um fundo vermelho nos campos que estiverem vazios (não-preenchidos)</li>
+        <li>Ao clicar em Limpar, todos os campos devem ser apagados</li>
+        <li>Quando a página terminar de carregar, todos os "labels" devem ficar com a letra na cor vermelha ('red' ou '#fff')</li>
+        <li>Ao terminar de carregar a página, o terceiro item desta lista de exercícios deve ficar com o fundo amarelo ('yellow' ou '#ff0')</li>
+        <li>Insira mais um item ao final desta lista usando apenas jQuery. Pode ser ao terminar de carregar a página.</li>
+        <li>Ao clicar em Enviar no formulário, faça o título "Exercícios" desaparecer, usando a função .fadeOut()</li>
+    </ol>
+    </body>
+</html>

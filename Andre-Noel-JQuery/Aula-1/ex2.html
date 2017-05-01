@@ -1,0 +1,114 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Exemplo 1</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        text-indent: 0;
+    }
+    #menu {
+        width: 50%;
+        background: #ccc;
+        border: 1px solid #999;
+        box-shadow: 2px 2px 2px #666;
+    }
+    #menu h2 {
+        background: #369;
+        margin: 0;
+        padding: 5px 10px;
+    }
+    #menu h2 a {
+        color: #fff;
+        text-decoration: none;
+    }
+    #menu ul {
+        padding: 0;
+    }
+    #menu ul li {
+        border-bottom: 1px dotted #000;
+        list-style: none;
+        margin: 0;
+        padding: 5px 10px;
+        text-indent: 0;
+    }
+    #menu ul li a {
+        color: #369;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    #menu ul li a:hover {
+        color: #ff0;
+    }
+    .red {
+        background: #f66;
+    }
+    #exercicios li {
+        list-style: circle;
+        text-indent: 10px;
+        margin-left: 20px;
+    }
+</style>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+    /* Você só vai escrever código aqui */
+    $('ul').hide();
+
+    $('#menu > h2').click(function() {
+        var i = $(this).index('h2');
+        $('ul').hide();
+        $('ul').eq(i).show();
+    });
+
+    $('li').click(function() {
+        $(this).toggleClass('red');
+    });
+    
+    $('#exercicios').hide();
+
+    /* Fim do seu código */
+});
+</script>
+</head>
+<body>
+<h1>Menu sanfona</h1>
+
+<div id="menu">
+<h2><a href="#">Carros</a></h2>
+<ul>
+    <li><a href="#">Fusca</a></li>
+    <li><a href="#">Gol</a></li>
+    <li><a href="#">Variant</a></li>
+    <li><a href="#">Bras&iacute;lia</a></li>
+    <li><a href="#">Chevette</a></li>
+</ul>
+<h2><a href="#">Filmes</a></h2>
+<ul>
+    <li><a href="#">Superman</a></li>
+    <li><a href="#">Superman II</a></li>
+    <li><a href="#">Superman III</a></li>
+    <li><a href="#">Superman IV</a></li>
+</ul>
+<h2><a href="#">Livros</a></h2>
+<ul>
+    <li><a href="#">João e o pé de feijão</a></li>
+</ul>
+</div>
+
+<div id="exercicios">
+<h2>Exercícios</h2>
+<ol id="lista-exercicios">
+    <li>Deixe apenas os títulos do menu visíveis assim que o site é aberto. Ao clicar em um dos títulos, abre o conteúdo da seção do menu, ocultando as demais.</li>
+    <li>Ao clicar em algum link dentro de uma das seções, o link recebe a classe "red" se não tiver ainda essa classe, se tiver ele perde a classe "red".</li>
+    <li>Ao terminar os itens anteriores você vai deixar oculta essa parte dos exercícios, também assim que o site for carregado.</li>
+</ol>
+</div>
+
+</body>
+</html>
