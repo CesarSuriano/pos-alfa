@@ -1,5 +1,5 @@
-1. Criar uma func„o que recebe um ano, e retorna true se o ano È bissexto. Sen„o false;
-2. Criar uma funÁ„o que determina se uma palavra È um isograma. Deve retornar true se palavra È um isograma;
+1. Criar uma fun√ß√£o que recebe um ano, e retorna true se o ano √© bissexto. Sen√£o false;
+2. Criar uma fun√ß√£o que determina se uma palavra √© um isograma. Deve retornar true se palavra √© um isograma;
 ===
 3. Criar:
 3.1. Diagrama de Classes (UML) de uma loja online de livros, com as classes:
@@ -11,12 +11,12 @@ Venda
 Pessoa
 Vendedor
 Cliente
-3.2. ImplementaÁ„o em Javascript das classes (com mÈtodos e atributos) do diagrama UML.
+3.2. Implementa√ß√£o em Javascript das classes (com m√©todos e atributos) do diagrama UML.
 3.3. Exemplo de uso das classes
-Instanciar, fazer a chamada dos mÈtodos para realizar uma venda.
+Instanciar, fazer a chamada dos m√©todos para realizar uma venda.
 ===
 4. Uso de Promises
-Para saber qual a melhor opÁ„o, o motorista deve fazer uma conta simples. Embora mais barato, o etanol È um combustÌvel que È consumido mais r·pido pelo motor flex de um carro em relaÁ„o ‡ gasolina. Por isso, para identificar qual dos dois È mais vantajoso È preciso dividir o preÁo do litro do etanol pelo valor do litro da gasolina. Se o resultado da conta for maior que 0,7, vale a pena colocar gasolina, se for menor, o melhor È o consumidor abastecer com etanol.
-Criar uma calculadora, no qual È informado o preÁo da Gasolina e do Etanol, e em seguida o usu·rio clica em um bot„o. Ao final, a calculadora informa para o usu·rio qual È o combustÌvel mais vantajoso.
+Para saber qual a melhor op√ß√£o, o motorista deve fazer uma conta simples. Embora mais barato, o etanol √© um combust√≠vel que √© consumido mais r√°pido pelo motor flex de um carro em rela√ß√£o √° gasolina. Por isso, para identificar qual dos dois √© mais vantajoso √© preciso dividir o pre√ßo do litro do etanol pelo valor do litro da gasolina. Se o resultado da conta for maior que 0,7, vale a pena colocar gasolina, se for menor, o melhor √© o consumidor abastecer com etanol.
+Criar uma calculadora, no qual √© informado o pre√ßo da Gasolina e do Etanol, e em seguida o usu√°rio clica em um bot√£o. Ao final, a calculadora informa para o usu√°rio qual √© o combust√≠vel mais vantajoso.
 
 Utilizar Promises para realizar todas as tarefas da calculadora.
