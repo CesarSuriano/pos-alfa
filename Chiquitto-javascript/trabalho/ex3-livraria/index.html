@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Loja Online</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <script src="Pessoa.js"></script>
-        <script src="Cliente.js"></script>
-        <script src="app.js"></script>
-    </body>
+
+<head>
+    <title>Loja Online</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+            height: 240px;
+            width: 170px;
+        }
+        #informacoes {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="livros">
+        
+    <div onclick="javascript:clickImg(this)">
+        <a data-titulo="JavaEE" data-valor="19,99" href="javascript:void(0)">
+            <img src="img/javaEE.jpg" alt="">
+        </a>
+        <br>
+        <label for="" id="tituloJava">JavaEE</label>
+        <label> - </label>
+        <label for="" id="valorJava">R$19,99</label>
+    </div>
+    <br>
+    <br>
+    <div onclick="javascript:clickImg(this)">
+        <a data-titulo="MEAN" data-valor="19,99" href="javascript:void(0)">
+            <img src="img/mean.png" alt="">
+        </a>
+        <br>
+        <label for="" id="tituloMean">JavaEE</label>
+        <label> - </label>
+        <label for="" id="valorMean">R$19,99</label>
+    </div>
+    </div>
+
+    <div id="informacoes">
+        <label for="">Digite seu nome:</label>
+        <input type="text" name="" value="" id="nome">
+        <br>
+        <label for="">Digite seu Email:</label>
+        <input type="text" name="" value="" id="email">
+        <br>
+        <label for="">Digite sua Data de Nascimento:</label>
+        <input type="text" name="" value="" id="dataNascimento">
+        <br>
+        <label for="">Digite o número de seu cartão:</label>
+        <input type="text" name="" value="" id="cartao">
+        <br>
+        <button type="button" onclick="enviarInformacoes()">Enviar</button>
+    </div>
+
+    <script src="js/Pessoa.js"></script>
+    <script src="js/Loja.js"></script>
+    <script src="js/Vendedor.js"></script>
+    <script src="js/Cliente.js"></script>
+    <script src="js/Livro.js"></script>
+    <script src="js/LivroImpresso.js"></script>
+    <script src="js/Ebook.js"></script>
+    <script src="js/Venda.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
 </html>
