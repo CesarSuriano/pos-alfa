@@ -1,0 +1,103 @@
+body{
+margin:0;padding:0;
+overflow-x: hidden;
+}
+
+#voltar-topo {
+	float: right;
+	background: red;
+	border: none;
+}
+ 
+#navMenu{
+list-style:none;
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+float:left;
+width:100%;
+margin:0;
+padding:0;
+background-color:#03aed9;
+z-index:999;
+}
+ 
+#navMenu > li{
+float:left;
+position:relative;
+display:block;
+margin:0 auto;
+transition:.3s;
+-moz-transition:.3s;
+-webkit-transition:.3s;
+}
+ 
+#navMenu > li:hover{
+background-color:#006882;
+}
+ 
+#navMenu > li > a{
+color:#fff;
+float:left;
+text-decoration:none;
+padding:18px 25px;
+letter-spacing:.1em;
+}
+ 
+
+#navMenu ul {
+position:absolute;
+z-index:-1;
+top:-999px;
+list-style:none;
+padding:0;
+margin:0;
+background:#006882;
+transition:.3s;
+-moz-transition:.3s;
+-webkit-transition:.3s;
+}
+ 
+#navMenu ul li a{
+color:#fff;
+text-decoration:none;
+display:block;
+padding:6px 10px;
+font-size:14px;
+line-height:2em;
+}
+ 
+#navMenu ul li:hover{
+background-color:#00485a;
+}
+ 
+#navMenu li:hover ul {
+display:block;
+top:50px;
+min-width:200px;
+z-index: 1;
+}
+
+.banners {
+	z-index: -2;
+}
+
+#banner1, #banner2, #banner3 {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    height: 80vh;
+}
+
+.limpa-float {
+	clear: both;
+}
+
+#banner1{
+    background-image: url(../images/gta1.png);  
+}
+#banner2{
+    background-image: url(../images/gta2.png);
+}
+#banner3{
+    background-image: url(../images/gta3.jpg);
+}
