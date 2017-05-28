@@ -1,0 +1,2 @@
+$('#leao').myPlugin(); 
+$('#girafa').myPlugin(); 
