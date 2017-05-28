@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Teste</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery.js"></script>
+    <script src="inputmask.js"></script>
+    <script src="inputmask.numeric.extensions.js"></script>
+    <script src="inputmask.phone.extensions.js"></script>
+    <script src="jquery.inputmask.js"></script>
+</head>
+
+<body>
+    <label for="">Data</label>
+    <input type="text" id="data">
+    <br>
+    <label for="">Fone</label>
+    <input type="text" id="fone">
+    <br>
+    <label for="">Cpf</label>
+    <input type="text" id="cpf">
+    <script>
+        $(document).ready(function () {
+            $('#data').inputmask("99-9999999");  //static mask
+            $('#fone').inputmask("(99)9999-99999");  //static mask
+            $('#cpf').inputmask("999-999-999-99");  //static mask
+        });
+    </script>
+</body>
+
+</html>
