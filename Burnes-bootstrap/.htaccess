@@ -1,8 +1,8 @@
 #habilitar o rewrite
 RewriteEngine on
 #files - arquivos
-RewriteCond %{SCRIPT_FILENAME} ! -f
+RewriteCond %{SCRIPT_FILENAME} !-f
 #directories - diretorios / pastas
-RewriteCond %{SCRIPT_FILENAME} ! -d
-#envia todas ass rotas para o index.php
+RewriteCond %{SCRIPT_FILENAME} !-d
+#envia todas as rotas para o index.php
 RewriteRule ^(.*) index.php?p=$1

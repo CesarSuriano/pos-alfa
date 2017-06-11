@@ -20,6 +20,8 @@
         <meta name="twitter:image" content="http://pos.professorburnes.com.br/casale/imgs/carsale.jpg">
         <meta name="twitter:title" content="Car Sale">
 
+        <base href="http://localhost/">
+
         <!--javascript-->
         <script src="js/jquery-3.1.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -112,9 +114,30 @@
         </div>        
     </nav>
 
+    <div class="banner hidden-xs">
+    </div>
+
     <main class="container">
         <?php
+           print_r($_GET);
+            if (isset($_GET["p"])) {
+                $p = trim($_GET["p"]);
             
+                 echo "Ta aqui";
+                $pagina = explode("/", $p);
+                //print_r($pagina);
+                $pagina = $p[0];
+            } else {
+                $pagina = "home";
+            }
+
+            $pagina = "pages/$pagina.php";
+
+            if ( file_exists( $pagina ) ) {
+                include $pagina;
+            } else {
+                include "pages/erro.php";
+            }
         ?>
     </main>
 
