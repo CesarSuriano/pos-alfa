@@ -1,0 +1,76 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat|Roboto";
+.banner {
+  width: 100%;
+  height: 500px;
+  background: url(../imgs/2.jpg) center fixed;
+  background-size: cover;
+  float: left;
+  margin-top: -25px; }
+
+.navbar {
+  border-radius: 0;
+  box-shadow: 0 0 10px #CCC;
+  background: #FFF;
+  border: 0; }
+  .navbar .nav li {
+    padding: 10px 5px;
+    border-left: 1px solid #CCC;
+    transition: 0.5s; }
+    .navbar .nav li:last-child {
+      border-right: 1px solid #CCC; }
+    .navbar .nav li a {
+      font: 1.5em Montserrat, Verdana, Tahoma;
+      transition: 0.5s; }
+    .navbar .nav li:hover, .navbar .nav li:active, .navbar .nav li a:hover {
+      background: #333;
+      color: #CCC; }
+    .navbar .nav li.open {
+      background: #333; }
+      .navbar .nav li.open a, .navbar .nav li.open a:active, .navbar .nav li.open:active, .navbar .nav li.open li, .navbar .nav li.open ul, .navbar .nav li.open li:hover, .navbar .nav li.open a:hover {
+        background: #333 !important;
+        color: #CCC !important; }
+      .navbar .nav li.open .dropdown-menu li {
+        border: 0; }
+        .navbar .nav li.open .dropdown-menu li:hover, .navbar .nav li.open .dropdown-menu li a:hover {
+          background: #CCC !important;
+          color: #333 !important; }
+
+h1, h2, h3 {
+  font-family: Roboto, Tahoma;
+  color: #F00; }
+
+p {
+  font: 1em Montserrat, Verdana, Tahoma;
+  color: #333; }
+
+footer {
+  padding: 10px 0px;
+  background: #333; }
+  footer p {
+    color: #CCC;
+    font-size: 1.1em; }
+  footer a {
+    color: #CCC;
+    margin-left: 10px;
+    font-size: 1.3em; }
+    footer a:hover {
+      color: #F00; }
+
+.row .thumbnail {
+  border-radius: 0; }
+  .row .thumbnail p {
+    height: 100px; }
+  .row .thumbnail .text-center {
+    height: 40px; }
+
+.btn {
+  border-radius: 0; }
+
+#sobre {
+  background: #F1F1F1;
+  padding: 20px 0px; }
+
+.row img, .img {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

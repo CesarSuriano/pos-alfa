@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Carsale - Loja de São Lourenço</title>
+        <title>CarSale</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Venda de carros">
         <meta name="keywords" content="fiat, 147">
 
-        <!--facebook og-open-grafics-->
-        <meta property="og:title" content="Car Sale">
-        <meta property="og:locale" content="pt-BR">
-        <meta property="og:description" content="Venda de carros lalala">
-        <meta property="og:image" content="http://pos.professorburnes.com.br/casale/imgs/carsale.jpg">
-        <meta property="og:image:width" content="800">
-        <meta property="og:image:height" content="315">
+        <!-- facebook - open grapgicss (og) -->
+        <meta propertty="og:title" content="Car Sale">
+        <meta propertty="og-locale" content="pt_BR">
+        <meta propertty="og-locale" content="pt_BR">
+        <meta propertty="og-description" content="Venda de carros">
+        <meta propertty="og-image" content="http://pos.professorburnes.com.br/carsale2/img/carsale.jpgs">
+        <meta propertty="og-image:width" content="800">
+        <meta propertty="og-image:height" content="315">
 
-        <!--twitter cards-->
-        <meta name="twitter:url" content="@cesarsuriano">
-        <meta name="twitter:image" content="http://pos.professorburnes.com.br/casale/imgs/carsale.jpg">
+        <!-- twitter cards -->
+        <meta name="twitter:url" content="@joseadilson">
+        <meta name="twitter:image" content="http://pos.professorburnes.com.br/carsale2/img/carsale.jpgs">
         <meta name="twitter:title" content="Car Sale">
 
-        <base href="http://localhost/">
+    
+        <!-- url base -->
+        <base href="http://localhost/Burnes-bootstrap/carsale-pos/" target="">
 
-        <!--javascript-->
-        <script src="js/jquery-3.1.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/bootstrap-inputmask.min.js"></script>
-        <script src="js/jqBootstrapValidation.js"></script>
+        <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
 
-        <!-- CSS -->
+        <!-- css -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" type="image/png" href="imgs/icone.png">
 
     </head>
-   <body>
+    <body>
 
     <header>
         <div class="container">
@@ -100,7 +103,7 @@
                 </ul>  
 
                 <form name="form1" class="navbar-form navbar-right">
-                    <div class="input-group">
+                    <div class="input-group input-group-lg">
                         <input type="text" name="" value=""placeholder="Buscar..." class="form-control">
                         <div class="input-group-btn">
                             <button type="submit" class="btn btn-default">
@@ -114,30 +117,37 @@
         </div>        
     </nav>
 
-    <div class="banner hidden-xs">
+    <div class="banner hidden-xs hidden-ms">
+        
     </div>
 
     <main class="container">
-        <?php
-           print_r($_GET);
-            if (isset($_GET["p"])) {
+        <?php 
+
+            //print_r($_GET);
+
+            if (isset ($_GET["p"])) {
+                //se o parametro p existir
                 $p = trim($_GET["p"]);
-            
-                 echo "Ta aqui";
-                $pagina = explode("/", $p);
-                //print_r($pagina);
-                $pagina = $p[0];
+
+                //Separar por / produto/111
+                //pagina - produto
+                //codigo - 111
+                $p = explode("/", $p);
+
+                $pagina = $p[0];//Nome da pagina
+
             } else {
                 $pagina = "home";
             }
 
             $pagina = "pages/$pagina.php";
 
-            if ( file_exists( $pagina ) ) {
+            if (file_exists($pagina)) 
                 include $pagina;
-            } else {
+            else
                 include "pages/erro.php";
-            }
+
         ?>
     </main>
 
@@ -145,7 +155,7 @@
         <div class="container">
             <div class="row">
                 <div class="cal-md-9 col-sm-9">
-                    <p><?php echo date("Y"); ?> Desenvolvido por César Augusto - Todos os direitos reservados</p>                
+                    <p><?php echo date("Y"); ?> Desenvolvido por José Adilson - Todos os direitos reservados</p>                
                 </div>
 
                 <div class="col-md-3 col-sm-3 text-right">

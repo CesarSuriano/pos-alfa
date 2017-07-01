@@ -1,0 +1,114 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto';
+
+$claro : #CCC;
+$clarinho: #F1F1F1;
+$escuro : #333;
+$red : #F00;
+
+
+$texto : Montserrat, Verdana, Tahoma;
+$titulo: Roboto, Tahoma;
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background: url(../imgs/2.jpg) center fixed;
+    background-size: cover;
+    float: left;
+    margin-top: -25px;
+
+}
+
+.navbar {
+    border-radius: 0;
+    box-shadow: 0 0 10px #CCC;
+    background: #FFF;
+    border: 0;
+
+    .nav li {
+        padding: 10px 5px;
+        border-left: 1px solid #CCC ;
+        transition: 0.5s;
+        &:last-child {
+            border-right: 1px solid $claro;
+        }
+        a {
+            font: 1.5em $texto ;
+            transition: 0.5s;
+        }
+
+        &:hover, &:active, a:hover {
+            background: $escuro;
+            color: $claro;
+        }
+        
+       &.open {
+            background: $escuro;
+            a, a:active, &:active, li, ul, li:hover,a:hover  {
+                background: $escuro !important;
+                color: $claro !important;
+            }
+
+            .dropdown-menu li {
+                border: 0;
+                &:hover, a:hover {
+                    background: $claro !important;
+                    color: $escuro !important;
+                }
+            }
+        }
+    }
+}
+
+h1, h2, h3 {
+    font-family: $titulo;
+    color: $red;
+}
+
+p {
+    font: 1em $texto;
+    color: $escuro;
+}
+
+footer {
+    padding: 10px 0px;
+    background: $escuro;
+    p {
+        color: $claro;
+        font-size: 1.1em;
+    }
+
+    a {
+        color: $claro;
+        margin-left: 10px;
+        font-size: 1.3em;
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+.row .thumbnail {
+    border-radius: 0;
+
+    p {
+        height: 100px;
+    }
+
+    .text-center {
+        height: 40px;
+    }
+}
+
+.btn {
+    border-radius: 0;
+}
+
+#sobre {
+    background: $clarinho;
+    padding: 20px 0px;
+}
+
+.row img, .img {
+    width: 100%;
+}
