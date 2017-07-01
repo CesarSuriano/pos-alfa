@@ -17,7 +17,6 @@
         <meta propertty="og-image:height" content="315">
 
         <!-- twitter cards -->
-        <meta name="twitter:url" content="@joseadilson">
         <meta name="twitter:image" content="http://pos.professorburnes.com.br/carsale2/img/carsale.jpgs">
         <meta name="twitter:title" content="Car Sale">
 
@@ -48,20 +47,21 @@
                     <img src="imgs/logo.png" alt="">                
                 </div>
                 <div class="col-md-9 col-sm-9 col-xs-6 text-right">
-                
-                    <i class="fa fa-phone"></i> 2222222222
+                    <nav>                    
+                        <i class="fa fa-phone"></i> 2222222222
 
-                    <a href="http://facebook">
-                        <i class="fa fa-facebook"></i>
-                    </a>     
+                        <a href="http://facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>     
 
-                    <a href="http://twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
+                        <a href="http://twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
 
-                    <a href="http://instagram">
-                        <i class="fa fa-instagram"></i>
-                    </a> 
+                        <a href="http://instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a> 
+                    </nav>
                 </div>
             </div>
         </div>
@@ -121,7 +121,9 @@
         
     </div>
 
-    <main class="container">
+    <div class="clearfix"></div>
+
+    <main>
         <?php 
 
             //print_r($_GET);
@@ -155,7 +157,7 @@
         <div class="container">
             <div class="row">
                 <div class="cal-md-9 col-sm-9">
-                    <p><?php echo date("Y"); ?> Desenvolvido por José Adilson - Todos os direitos reservados</p>                
+                    <p><?php echo date("Y"); ?> Desenvolvido por César Augusto - Todos os direitos reservados</p>                
                 </div>
 
                 <div class="col-md-3 col-sm-3 text-right">

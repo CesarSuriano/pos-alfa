@@ -109,6 +109,25 @@ footer {
     padding: 20px 0px;
 }
 
-.row img, .img {
+.img{
     width: 100%;
+}
+
+.breadcrumb {
+    margin-top: 40px;
+}
+
+header nav {
+    margin-top: 25px;
+    font: 1.5em $texto;
+    color: $red;
+    a {
+        margin-left: 10px;
+        color: $red;
+        text-decoration: none;
+        transition: 0.5s;
+        &:hover {
+            color:$escuro;
+        }
+    }
 }

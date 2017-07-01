@@ -70,7 +70,22 @@ footer {
   background: #F1F1F1;
   padding: 20px 0px; }
 
-.row img, .img {
+.img {
   width: 100%; }
+
+.breadcrumb {
+  margin-top: 40px; }
+
+header nav {
+  margin-top: 25px;
+  font: 1.5em Montserrat, Verdana, Tahoma;
+  color: #F00; }
+  header nav a {
+    margin-left: 10px;
+    color: #F00;
+    text-decoration: none;
+    transition: 0.5s; }
+    header nav a:hover {
+      color: #333; }
 
 /*# sourceMappingURL=style.css.map */
