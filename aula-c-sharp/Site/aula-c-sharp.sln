@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "aula-c-sharp", ".", "{7876D9A6-FAED-41AC-8448-DBEE580B91DD}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/aula-c-sharp"
+		Debug.AspNetCompiler.PhysicalPath = "..\aula-c-sharp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\aula-c-sharp\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/aula-c-sharp"
+		Release.AspNetCompiler.PhysicalPath = "..\aula-c-sharp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\aula-c-sharp\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49196"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7876D9A6-FAED-41AC-8448-DBEE580B91DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7876D9A6-FAED-41AC-8448-DBEE580B91DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
