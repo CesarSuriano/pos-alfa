@@ -3,5 +3,5 @@
 <asp:Button ID="btnGravar" runat="server" Text="Gravar" />
 <asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
 <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" />
-<asp:Button ID="btnExcluir" runat="server" Text="Excluir" OnClientClick="return confirm('Deseja realmente excluir este registro?');"/>
-
+<asp:Button ID="btnExcluir" runat="server" Text="Excluir"
+    OnClientClick="return confirm('Deseja realmente excluir este registro?');" />

@@ -9,7 +9,13 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        Login: <br />
+        <asp:TextBox ID="txtLogin" runat="server"></asp:TextBox>
+        <br />
+        Senha: <br />
+        <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
+        <br />
+        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
     </div>
     </form>
 </body>

@@ -7,8 +7,10 @@ using System.Web.UI.WebControls;
 
 public partial class Adm_BarraEdicao : System.Web.UI.UserControl
 {
-    #region publicação dos botões
-    public Button BtnNovo {
+    #region Publicação dos botões
+
+    public Button BtnNovo
+    {
         get { return btnNovo; }
         set { btnNovo = value; }
     }
@@ -19,16 +21,16 @@ public partial class Adm_BarraEdicao : System.Web.UI.UserControl
         set { btnAlterar = value; }
     }
 
-    public Button BtnCancelar
-    {
-        get { return btnCancelar; }
-        set { btnCancelar = value; }
-    }
-
     public Button BtnGravar
     {
         get { return btnGravar; }
         set { btnGravar = value; }
+    }
+
+    public Button BtnCancelar
+    {
+        get { return btnCancelar; }
+        set { btnCancelar = value; }
     }
 
     public Button BtnExcluir

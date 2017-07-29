@@ -11,18 +11,23 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:HyperLink ID="linkInicio" runat="server" NavigateUrl="~/Adm/Inicio.aspx">Início</asp:HyperLink>
+        <asp:HyperLink ID="linkInicio" runat="server"
+            NavigateUrl="~/Adm/Inicio.aspx">Início</asp:HyperLink>
 
-        <asp:HyperLink ID="linkCategoria" runat="server" NavigateUrl="~/Adm/Categoria.aspx">Categoria</asp:HyperLink>
+        <asp:HyperLink ID="linkCategoria" runat="server"
+            NavigateUrl="~/Adm/Categoria.aspx">Categoria</asp:HyperLink>
 
-        <asp:HyperLink ID="linkNoticia" runat="server" NavigateUrl="~/Adm/Noticia.aspx">Notícia</asp:HyperLink>
+        <asp:HyperLink ID="linkNoticia" runat="server"
+            NavigateUrl="~/Adm/Noticia.aspx">Notícia</asp:HyperLink>
 
-        <asp:HyperLink ID="linkUsuario" runat="server" NavigateUrl="~/Adm/Usuario.aspx">Usuário</asp:HyperLink>
+        <asp:HyperLink ID="linkUsuario" runat="server"
+            NavigateUrl="~/Adm/Usuario.aspx">Usuário</asp:HyperLink>
 
-        <br /> <hr /> <br />
+        <asp:LinkButton ID="linkSair" runat="server" OnClick="linkSair_Click">Sair</asp:LinkButton>
+
+        <br /><hr /><br />
 
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-            
         </asp:ContentPlaceHolder>
     </div>
     </form>
