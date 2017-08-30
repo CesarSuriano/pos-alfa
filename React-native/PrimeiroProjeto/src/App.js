@@ -4,46 +4,46 @@ import {
     AppRegistry,
     Text,
     Modal,
-    Button
+    Button,
+    Geolocation,
+    Platform,
 } from 'react-native';
 
 import ImageTouch from './components/ImageTouch';
-import ListScreen from './screens/ListScreen'
-import FormScreen from './screens/FormScreen'
-import RequestScreen from './screens/RequestScreen'
+import ListScreen from './screens/ListScreen';
+import FormScreen from './screens/FormScreen';
+import RequestScreen from './screens/RequestScreen';
+import GeolocationScreen from './screens/GeolocationScreen';
+import DimensionsScreen from './screens/DimensionsScreen';
 
 class App extends Component {
 
     state = {
         exibirModal: false
     }
-    
+
+    componentDidMount() {
+        if (Platform.OS === 'ios') {
+            Geolocation.requestAuthorization();
+        }
+    }
+
     renderModal = () => {
         return (
             <View>
-                <Button 
-                    backgroundColor = "#00f"
-                    title="Abrir modal"
-                    onPress = { () => this.setState({ exibirModal: true }) }
-                />
-                <Modal 
-                    visible = { this.state.exibirModal }
-                    onRequestClose = {this.teste}
-                    onRequestClose = { () => this.setState({ exibirModal: false }) }>
+                <Button title="Abrir Modal"
+                    onPress={() => this.setState({ exibirModal: true })} />
 
-                    <View
-                        style = {{
-                            flex: 1,
-                            backgroundColor: "#f00"
-                        }}>
-
-                        <Text>Este é o conteudo do modal</Text>
-                        <Button
-                            title = "Fechar"
-                            onPress = { () => this.setState({ exibirModal: false }) }
-                        ></Button>
+                <Modal
+                    visible={this.state.exibirModal}
+                    transparent={true}
+                    onRequestClose={() => this.setState({ exibirModal: false })}
+                >
+                    <View style={{ flex: 1, backgroundColor: '#f00' }}>
+                        <Text>Este é o conteúdo do Modal</Text>
+                        <Button title="Fechar"
+                            onPress={() => this.setState({ exibirModal: false })} />
                     </View>
-                    
                 </Modal>
             </View>
         )
@@ -52,20 +52,19 @@ class App extends Component {
     render() {
         return (
             <View style={{
-                backgroundColor: '#237865',
+                backgroundColor: '#eee',
                 flex: 1
             }}>
 
-                {/* <Text>App é o meu componente principal.</Text> */}
+                {/* Remova o comentário do componente abaixo para exibí-lo. */}
 
-                {/* <ImageTouch url="https://www.appcoda.com/wp-content/uploads/2015/04/react-native.png" />
-                <ImageTouch url="https://blog.algolia.com/wp-content/uploads/2015/12/react-native.png" />
-                <ImageTouch url="http://i.imgur.com/oudmGva.png" /> */}
-                {/* <ListScreen/> */}
-                {/* <FormScreen/> */}
-                {/* this.renderModal()*/ }
+                {/*<ListScreen />*/}
+                {/*<FormScreen />*/}
+                {/*{this.renderModal()}*/}
+                {/*<RequestScreen />*/}
+                <GeolocationScreen />
 
-                <RequestScreen/>
+                {/*<DimensionsScreen />*/}
 
             </View>
         )
