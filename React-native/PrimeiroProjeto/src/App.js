@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+﻿import React, { Component } from 'react';
 import {
     View,
     AppRegistry,
@@ -67,7 +67,7 @@ class App extends Component {
                 {/*<DimensionsScreen />*/}
 
             </View>
-        )
+          )
     }
 }
 
