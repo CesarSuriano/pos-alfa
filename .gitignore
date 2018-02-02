@@ -11,3 +11,6 @@ React-Native/TrabalhoCesar
 node_modules
 node_modules/
 node_modules/*
+/edson-java/aula01/nbproject/private/
+/edson-java/aula01/build/
+/edson-java/aula01/dist/
